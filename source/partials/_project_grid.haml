@@ -1,0 +1,30 @@
+.row
+  %h3 Projects
+  .large-12.medium-12.columns
+    .row.data-equalizer{"data-equalizer" => "", "data-equalize-on" => "medium"}
+      .large-4.medium-4.columns
+        .callout{"data-equalizer-watch" => ""}
+          %p Six columns
+      .large-4.medium-4.columns
+        .callout{"data-equalizer-watch" => ""}
+          %p Six columns
+      .large-4.medium-4.columns
+        .callout{"data-equalizer-watch" => ""}
+          %p Six columns. Am I to take it that this is just going to adjust based on the text entered and will be bigger and smaller depending on how much info there is to show? That's maybe good and maybe not great. Will all these boxes be the same height?
+    .row.data-equalizer{"data-equalizer" => "", "data-equalize-on" => "medium"}
+      .large-4.medium-4.columns
+        .callout{"data-equalizer-watch" => ""}
+          %h5.subheader This has a header instead
+          %p Six columns. Am I to take it that this is just going to adjust based on the text entered and will be bigger and smaller depending on how much info there is to show? That's maybe good and maybe not great. Will all these boxes be the same height?
+      .large-4.medium-4.columns
+        .callout{"data-equalizer-watch" => ""}
+          %p Six columns
+      .large-4.medium-4.columns
+        .callout{"data-equalizer-watch" => ""}
+          %p Six columns
+%hr/
+
+-#.projects
+  - data.projects.each do |project|
+    %h4= project[:name]
+    %p= project[:description]
