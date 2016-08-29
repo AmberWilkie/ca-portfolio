@@ -1,0 +1,10 @@
+%HTML5
+  %head
+    %title= current_page.data.title || "Middleman"
+    %link{:href => "//fonts.googleapis.com/css?family=Lato:300,400", :rel => "stylesheet", :type => "text/css"}/
+    = stylesheet_link_tag :site
+    = javascript_include_tag :all
+  %body
+
+    = yield
+    = partial 'partials/footer'
