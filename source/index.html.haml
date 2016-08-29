@@ -1,14 +1,4 @@
 - if current_page.url == '/'
   -# do something only for the home page, like an Epic
 
-.welcome
-  .logo
-    = image_tag 'middleman-logo.svg'
-  %h1 Middleman is Running
-  %p.doc
-    = link_to 'Running Middleman like a mofo', '#', target: '_blank'
-
-.projects
-  - data.projects.each do |project|
-    %h4= project[:name]
-    %p= project[:description]
+= partial "partials/project_grid"

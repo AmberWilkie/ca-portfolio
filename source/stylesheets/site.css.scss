@@ -2,10 +2,12 @@
 @import "normalize";
 @import "foundation";
 
+$body-font-family:  Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+
 body {
-  background: #ECC561;
+  background: #e6e6e6;
   text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
 }
 
@@ -16,7 +18,6 @@ body {
 
 h1 {
   color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.8em;
   font-weight: 400;
   margin: 0;
@@ -24,7 +25,6 @@ h1 {
 
 .doc {
   margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   font-weight: 300;
 
@@ -72,7 +72,7 @@ h1 {
 }
 
 /**************************************
-HEADER
+NAV
 **************************************/
 // for presentation only
 
@@ -138,3 +138,30 @@ $menu-background: #333;
 .js-drilldown-back::before {
   border-color: transparent #fff transparent transparent;
 }
+/**************************************
+GRID
+**************************************/
+hr {
+  color: #c9c9c9
+}
+.row {
+  font-family: "Roboto", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+  h3 {
+    color:  #004d4d;
+    font-family: "Fredoka One", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .large-4 {
+    background-color: #c9c9c9
+  }
+  .primary.callout {
+    background-color: #ffb380
+  }
+
+  .large-4.medium-4.columns {
+    padding-top: .8em;
+  }
+  h5.subheader {
+    color:  #004d4d;
+    font-family: "Fredoka One", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
