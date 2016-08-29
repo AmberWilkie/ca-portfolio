@@ -1,10 +1,13 @@
 @charset "utf-8";
 @import "normalize";
+@import "foundation";
+
+$body-font-family:  Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 
 body {
-  background: #ECC561;
+  background: #e6e6e6;
   text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
 }
 
@@ -15,7 +18,6 @@ body {
 
 h1 {
   color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.8em;
   font-weight: 400;
   margin: 0;
@@ -23,7 +25,6 @@ h1 {
 
 .doc {
   margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   font-weight: 300;
 
@@ -69,3 +70,98 @@ h1 {
 .projects {
   color: gray
 }
+
+/**************************************
+NAV
+**************************************/
+// for presentation only
+
+$menu-background: #333;
+
+.title-bar {
+  background: $menu-background;
+  padding: 0.9rem;
+}
+
+.top-bar {
+  background: $menu-background;
+
+  ul {
+    background: $menu-background;
+
+    li {
+      background: $menu-background;
+
+        a {
+          color: #fff;
+      }
+    }
+  }
+}
+
+.menu-text {
+  color: #fff;
+
+  @media only screen and (max-width: 40em) {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  .menu:last-child {
+    border-left: 1px solid #4e4e4e;
+  }
+
+  .menu:first-child {
+    border-left: none;
+  }
+
+  .menu {
+    li:not(:last-child) {
+      border-right: 1px solid #4e4e4e;
+    }
+  }
+}
+
+.dropdown.menu .submenu {
+  border: none;
+}
+
+.dropdown.menu .is-dropdown-submenu-parent.is-right-arrow>a::after {
+  border-color: #fff transparent transparent;
+}
+
+.is-drilldown-submenu-parent>a::after {
+  border-color: transparent transparent transparent #fff;
+}
+
+.js-drilldown-back::before {
+  border-color: transparent #fff transparent transparent;
+}
+/**************************************
+GRID
+**************************************/
+hr {
+  color: #c9c9c9
+}
+.row {
+  font-family: "Roboto", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+  h3 {
+    color:  #004d4d;
+    font-family: "Fredoka One", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .large-4 {
+    background-color: #c9c9c9
+  }
+  .primary.callout {
+    background-color: #ffb380
+  }
+
+  .large-4.medium-4.columns {
+    padding-top: .8em;
+  }
+  h5.subheader {
+    color:  #004d4d;
+    font-family: "Fredoka One", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
