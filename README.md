@@ -2,7 +2,7 @@
 Created for Craft Academy as part of the Week Four activities.
 
 #### Languages and Tools
-Written in HAML, an HTML interface tool, with help from Ruby, YAML and Foundation.
+Written in HAML with Middleman, with help from Ruby, YAML and Foundation.
 
 #### Testing with Rspec
 Rspec is useful for testing the Ruby-embedded bits of the page - whether or not loops are actually looping, etc. It's not so helpful for positioning, colors, or other purely visual attributes.  
