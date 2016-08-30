@@ -246,6 +246,10 @@ ABOUT
 .about {
 
 }
+.row.about {
+  background-color: white;
+  padding: 2em;
+}
   h3 {
     text-transform: uppercase;
     font-weight: bold;
@@ -263,6 +267,7 @@ hr {
   font-family: "Roboto", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #666666;
   padding-top: 1.2em;
+  padding-bottom: .5em;
 
 }
   h2 {
