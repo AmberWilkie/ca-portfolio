@@ -26,3 +26,4 @@
 - name: Checkout Challenge
   description: Bonus challenge for the first week of bootcamp - an extremely bare-bones "store".
   github: https://github.com/AmberWilkie/checkout-challenge
+  craftacademy: true
