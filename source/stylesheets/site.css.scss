@@ -207,6 +207,7 @@ $menu-background: #333;
   border-bottom-width: 0;
   right: 0px;
   margin-top: -2px; }
+
 .size-24 { font-size: 24px; }
 .is-dropdown-submenu {
   min-width: 50px;
@@ -229,7 +230,8 @@ HERO
   }
   .row.hero {
     background-color: #ffffff;
-    padding: 4em;
+    padding-top: 7em;
+    padding-bottom: 7em;
   }
   .button.hero {
     background-color: #ff9012;
@@ -243,6 +245,10 @@ ABOUT
 **************************************/
 .about {
 
+}
+.row.about {
+  background-color: white;
+  padding: 2em;
 }
   h3 {
     text-transform: uppercase;
@@ -261,13 +267,17 @@ hr {
   font-family: "Roboto", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #666666;
   padding-top: 1.2em;
+  padding-bottom: .5em;
 
 }
   h2 {
     color:  #004d4d;
-    font-family: "Fredoka One", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
+  }
+  h3.grid {
+    color: #ffffff;
+
   }
 
   .large-4 {
@@ -286,7 +296,8 @@ hr {
   }
   h5.subheader {
     color:  #004d4d;
-    font-family: "Fredoka One", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
   }
   .craftdiv {
     color: #a2a2a2;
@@ -299,4 +310,30 @@ hr {
   .grayfooter {
     background-color: #333;
     padding: 20px;
+  }
+  .footofawesome {
+    color: #a2a2a2;
+  }
+  .h5foot {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ff9012;
+  }
+  .tinyhr {
+    box-sizing: content-box;
+    max-height: 5rem;
+    max-width: 3rem;
+    height: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 2px solid #ff9012;
+    border-left: 0;
+    margin: 1.25rem auto;
+    clear: both;
+  }
+  a.footofawesome {
+    color: #ff9012;
+    &:hover {
+      color: #ffffff;
+    }
   }
