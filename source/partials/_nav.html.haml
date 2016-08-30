@@ -1,4 +1,4 @@
-.top-bar-container
+.top-bar-container.sticky-container{"data-sticky-container" => ""}
   .row.graynav
     .title-bar{"data-hide-for" => "medium", "data-responsive-toggle" => "main-menu"}
       %button.menu-icon{"data-toggle" => "", :type => "button"}
@@ -8,19 +8,19 @@
         %img.logo{:src => "/images/logo.png"}
       .top-bar-right
         %ul.dropdown.menu{"data-dropdown-menu" => ""}
-          %ul.menu{"data-responsive-menu" => "drilldown small-dropdown"}
+          %ul.menu.social{"data-responsive-menu" => "drilldown small-dropdown"}
             %li
               %a{:href => "#projects"} Projects
             %li
               %a{:href => "#about"} About
             %li
               %a{:href => "#contact"} Contact
-            %li.has-submenu{style: "max-width: 40px !important"}
+            %li
               %a{:href => "#"} @
-              %ul.submenu.menu.vertical{"data-submenu" => "", style: "max-width: 40px !important"}
-                %li{style: "width: 40px !important"}
+              %ul.menu{"data-submenu" => ""}
+                %li
                   %a{:href => "#"} F
-                %li{style: "width: 40px !important"}
+                %li
                   %a{:href => "#"} Li
-                %li{style: "width: 40px !important"}
+                %li
                   %a{:href => "#"} I

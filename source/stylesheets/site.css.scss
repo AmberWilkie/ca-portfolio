@@ -181,6 +181,32 @@ $menu-background: #333;
 .js-drilldown-back::before {
   border-color: transparent #fff transparent transparent;
 }
+.ul.dropdown.menu.social {
+  max-width: 5px;
+  background-color: white;
+}
+.ul.submenu.menu.vertical.social {
+  max-width: 5px;
+  background-color: white;
+}
+.ul.menu.social {
+  max-width: 5px;
+  background-color: white;
+}
+.dropdown.menu > li.is-dropdown-submenu-parent > a {
+  padding-right: .5rem;
+  position: relative; }
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset 0px;
+  border-color: transparent transparent;
+  border-top-style: solid;
+  border-bottom-width: 0;
+  right: 0px;
+  margin-top: -2px; }
 /**************************************
 HERO
 **************************************/
