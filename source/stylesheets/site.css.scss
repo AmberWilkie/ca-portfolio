@@ -22,6 +22,19 @@ body {
   margin: 1.25rem auto;
   clear: both;
 }
+.orangehr {
+  max-width: 50px;
+  border-color: #ff9012;
+  border-width: 3px;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 3px solid #ff9012;
+}
 
 .logo img {
   height: 18.75em;
