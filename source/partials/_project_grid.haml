@@ -1,27 +1,44 @@
-.row
+.projects
   %h3 Projects
-  .large-12.medium-12.columns
-    .row.data-equalizer{"data-equalizer" => "", "data-equalize-on" => "medium"}
-      .large-4.medium-4.columns
-        .callout{"data-equalizer-watch" => ""}
-          %p Six columns
-      .large-4.medium-4.columns
-        .callout{"data-equalizer-watch" => ""}
-          %p Six columns
-      .large-4.medium-4.columns
-        .callout{"data-equalizer-watch" => ""}
-          %p Six columns. Am I to take it that this is just going to adjust based on the text entered and will be bigger and smaller depending on how much info there is to show? That's maybe good and maybe not great. Will all these boxes be the same height?
-    .row.data-equalizer{"data-equalizer" => "", "data-equalize-on" => "medium"}
-      .large-4.medium-4.columns
-        .callout{"data-equalizer-watch" => ""}
-          %h5.subheader This has a header instead
-          %p Six columns. Am I to take it that this is just going to adjust based on the text entered and will be bigger and smaller depending on how much info there is to show? That's maybe good and maybe not great. Will all these boxes be the same height?
-      .large-4.medium-4.columns
-        .callout{"data-equalizer-watch" => ""}
-          %p Six columns
-      .large-4.medium-4.columns
-        .callout{"data-equalizer-watch" => ""}
-          %p Six columns
+  .row
+    .large-12.medium-12.columns
+      .row.data-equalizer{"data-equalizer" => "", "data-equalize-on" => "medium"}
+      - data.projects.each do |project|
+        .large-4.medium-4.columns
+          .callout{"data-equalizer-watch" => ""}
+            %h5.subheader= project[:name]
+            %p= project[:description]
+            - if project[:github] != nil
+              %a{:href => "#{project[:github]}", :target => "_new"} Github
+            - if project[:github] != nil && project[:deployed] != nil
+              |
+            - if project[:deployed] != nil
+              %a{:href => "#{project[:deployed]}", :target => "_new"} Deployed
+            - if project[:craftacademy]
+              .craftdiv
+                Created for
+                %a{:href => "http://www.craftacademy.se", :target => "_new"}Craft Academy
+                bootcamp
+
+
+
+      -#   .large-4.medium-4.columns
+      -#     .callout{"data-equalizer-watch" => ""}
+      -#       %p Six columns
+      -#   .large-4.medium-4.columns
+      -#     .callout{"data-equalizer-watch" => ""}
+      -#       %p Six columns. Am I to take it that this is just going to adjust based on the text entered and will be bigger and smaller depending on how much info there is to show? That's maybe good and maybe not great. Will all these boxes be the same height?
+      -# .row.data-equalizer{"data-equalizer" => "", "data-equalize-on" => "medium"}
+      -#   .large-4.medium-4.columns
+      -#     .callout{"data-equalizer-watch" => ""}
+      -#       %h5.subheader This has a header instead
+      -#       %p Six columns. Am I to take it that this is just going to adjust based on the text entered and will be bigger and smaller depending on how much info there is to show? That's maybe good and maybe not great. Will all these boxes be the same height?
+      -#   .large-4.medium-4.columns
+      -#     .callout{"data-equalizer-watch" => ""}
+      -#       %p Six columns
+      -#   .large-4.medium-4.columns
+      -#     .callout{"data-equalizer-watch" => ""}
+      -#       %p Six columns
 %hr/
 
 -#.projects
