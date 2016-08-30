@@ -1,5 +1,28 @@
-- name: My First Website
-  description: Simple HTML5 site I've build during the PrepCourse
+- name: AmberNote
+  description: A simple journalling app for programmers built on Sinatra
+  github: https://github.com/AmberWilkie/ambernote
+  deployed: https://ambernote.herokuapp.com
 
-- name: FizzBuzz
-  description: Godforsaken FizzBuzz, för fan
+- name: Blackjack
+  description: Card game written in Javascript.
+  github: https://github.com/AmberWilkie/blackjack-js
+  deployed: https://amberwilkie.github.io/blackjack-js/
+
+- name: Fundamentals Workshop
+  description: Brief introduction to programming fundamentals, prepared for Craft Academy.
+  github: https://github.com/AmberWilkie/fundamentals-workshop
+
+- name: BMI Calculator
+  description: An introductory Javascript project for calculating BMI with metric or imperial data.
+  github: https://github.com/AmberWilkie/ca-bmi-challenge
+  deployed: https://amberwilkie.github.io/ca-bmi-challenge/
+  craftacademy: true
+
+- name: The Library
+  description: An introductory Ruby project where "users" can borrow library books from a YAML file.
+  github: https://github.com/AmberWilkie/library-challenge
+  craftacademy: true
+
+- name: Checkout Challenge
+  description: Bonus challenge for the first week of bootcamp - an extremely bare-bones "store".
+  github: https://github.com/AmberWilkie/checkout-challenge
