@@ -23,6 +23,10 @@ h1 {
   margin: 0;
 }
 
+a {
+  color: #ff9012;
+}
+
 .doc {
   margin: 3em 0;
   font-size: 1.1em;
@@ -145,7 +149,7 @@ hr {
 }
 .row {
   font-family: "Roboto", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #c9c9c9
+  background-color: #c9c9c9;
 }
   h3 {
     color:  #004d4d;
@@ -155,6 +159,7 @@ hr {
 
   }
   .callout {
+    color: #404040;
     background-color: #ffffff;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
