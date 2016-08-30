@@ -1,19 +1,26 @@
-.row.graynav
-  .title-bar{"data-hide-for" => "medium", "data-responsive-toggle" => "main-menu"}
-    %button.menu-icon{"data-toggle" => "", :type => "button"}
-    .title-bar-title Menu of Awesome
-  #main-menu.top-bar
-    .top-bar-left
-      %ul.dropdown.menu{"data-dropdown-menu" => ""}
-        %li
-          %img.logo{:src => "/images/logo.png"}
-    .top-bar-right
-      %ul.menu{"data-responsive-menu" => "drilldown medium-dropdown"}
-        %li
-          %a{:href => "#"} Projects
-        %li
-          %a{:href => "#"} About
-        %li
-          %a{:href => "#"} Contact
-        %li
-          %a{:href => "#"} @
+.top-bar-container
+  .row.graynav
+    .title-bar{"data-hide-for" => "medium", "data-responsive-toggle" => "main-menu"}
+      %button.menu-icon{"data-toggle" => "", :type => "button"}
+      .title-bar-title Menu of Awesome
+    #main-menu.top-bar
+      .top-bar-left
+        %img.logo{:src => "/images/logo.png"}
+      .top-bar-right
+        %ul.dropdown.menu{"data-dropdown-menu" => ""}
+          %ul.menu{"data-responsive-menu" => "drilldown small-dropdown"}
+            %li
+              %a{:href => "#projects"} Projects
+            %li
+              %a{:href => "#about"} About
+            %li
+              %a{:href => "#contact"} Contact
+            %li.has-submenu{style: "max-width: 40px !important"}
+              %a{:href => "#"} @
+              %ul.submenu.menu.vertical{"data-submenu" => "", style: "max-width: 40px !important"}
+                %li{style: "width: 40px !important"}
+                  %a{:href => "#"} F
+                %li{style: "width: 40px !important"}
+                  %a{:href => "#"} Li
+                %li{style: "width: 40px !important"}
+                  %a{:href => "#"} I

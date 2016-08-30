@@ -134,6 +134,9 @@ $menu-background: #333;
     }
   }
 }
+.sticky {
+  width: 100%;
+}
 
 .menu-text {
   color: #fff;
@@ -161,6 +164,10 @@ $menu-background: #333;
 
 .dropdown.menu .submenu {
   border: none;
+  max-width: 5px;
+}
+.vertical {
+  max-width: 5px;
 }
 
 .dropdown.menu .is-dropdown-submenu-parent.is-right-arrow>a::after {
