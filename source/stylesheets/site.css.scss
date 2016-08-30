@@ -13,6 +13,7 @@ body {
 
 .betterhr {
   box-sizing: content-box;
+  max-height: 5rem;
   max-width: 62.5rem;
   height: 0;
   border-right: 0;
@@ -179,6 +180,7 @@ HERO
 .hero {
 }
   h1 {
+    text-transform: uppercase;
     font-weight: bold;
     font-family: "Roboto", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 3em;
@@ -190,7 +192,6 @@ HERO
   }
   .row.hero {
     background-color: #ffffff;
-
     padding: 4em;
   }
   .button.hero {
@@ -207,9 +208,10 @@ ABOUT
 
 }
   h3 {
+    text-transform: uppercase;
     font-weight: bold;
     font-family: "Roboto", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #ff9012;
   }
 /**************************************
@@ -218,14 +220,19 @@ GRID
 hr {
   color: #c9c9c9
 }
-.row {
+.row.grid {
   font-family: "Roboto", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #c9c9c9;
+  background-color: #666666;
+  padding-top: 1.2em;
+
 }
   h2 {
     color:  #004d4d;
     font-family: "Fredoka One", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
   }
+
   .large-4 {
 
   }
@@ -247,4 +254,12 @@ hr {
   .craftdiv {
     color: #a2a2a2;
     font-size: 80%;
+  }
+  /**************************************
+  FOOTER
+  **************************************/
+
+  .grayfooter {
+    background-color: #333;
+    padding: 20px;
   }
