@@ -10,10 +10,15 @@ This is a second example article. I've included some markdown stuff so I can see
 *This is italic*
 
 ## This is a two-hash headline
-### This is a thre-hash
-#### Four
-##### Five hashes
-###### Six hashes?
+
+### This is a three-hash  
+
+#### Four  
+
+##### Five hashes  
+
+###### Six hashes?  
+
 ####### SEVEN hashes!?
 
 No, there's no seven hashes. No problem.
