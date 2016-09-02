@@ -1,0 +1,23 @@
+---
+title: It's a blog eat blog world
+date: 2016-09-02
+tags: example
+---
+
+This is a second example article. I've included some markdown stuff so I can see what all the formatting looks like:
+
+**This is bold.**  
+*This is italic*
+
+## This is a two-hash headline
+### This is a thre-hash
+#### Four
+##### Five hashes
+###### Six hashes?
+####### SEVEN hashes!?
+
+No, there's no seven hashes. No problem.
+
+# Finally, just one big hash.
+
+And some text under to see if we get that hr.
