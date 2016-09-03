@@ -28,7 +28,7 @@ activate :blog do |blog|
   # Matcher for blog source files
   blog.sources = "/articles/{year}-{month}-{day}.html"
   # blog.taglink = "tags/{tag}.html"
-  blog.layout = "/blog_layout"
+  blog.layout = "./layouts/blog_layout"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"
@@ -36,9 +36,11 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
 
-  # blog.tag_template = "blog/tag.html"
-  # blog.calendar_template = "calendar.html"
+  blog.tag_template = "blog/tag.html"
+  blog.calendar_template = "blog/calendar.html"
   blog.prefix = "/blog"
+
+  page "blog/articles/*", :layout => :blog_layout
 
   # Enable pagination
   # blog.paginate = true
@@ -48,9 +50,9 @@ end
 
 page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
