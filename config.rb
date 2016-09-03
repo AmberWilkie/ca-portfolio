@@ -40,7 +40,7 @@ activate :blog do |blog|
   blog.calendar_template = "blog/calendar.html"
   blog.prefix = "/blog"
 
-  page "blog/articles/*", :layout => :blog_layout
+  # page "blog/articles/*", :layout => :blog_layout
 
   # Enable pagination
   # blog.paginate = true
