@@ -48,7 +48,8 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
-page "/feed.xml", layout: false
+# page "/feed.xml", layout: false
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -70,8 +71,8 @@ configure :build do
   # activate :minify_javascript
 end
 
-activate:deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = ’master’
-  deploy.build_before = true
-end
+# activate:deploy do |deploy|
+#   # deploy.method = :git
+#   # deploy.branch = ’master’
+#   # deploy.build_before = true
+# end
