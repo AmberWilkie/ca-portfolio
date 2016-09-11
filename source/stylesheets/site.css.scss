@@ -370,6 +370,12 @@ hr {
   /**************************************
   CODE HIGHLIGHTING
   **************************************/
+.prettyprint {
+  font-weight: bold;
+  background-color: #d9d9d9;
+  padding: .1em;
+}
+
 .highlight {
   max-width: 80%;
   margin: 1em;

@@ -36,13 +36,14 @@ end
 # Markdown
 ###
 # activate :syntax, line_numbers: false
-# set :markdown_engine, :redcarpet
-# set :markdown, smartypants: true,
-#                         autolink: true,
-#                         fenced_code_blocks: true,
-#                         no_intra_emphasis: true,
-#                         superscript: true,
-#                         footnotes: true
+set :markdown_engine, :redcarpet
+set :markdown, smartypants: true,
+                        autolink: true,
+                        fenced_code_blocks: true,
+                        no_intra_emphasis: true,
+                        superscript: true,
+                        footnotes: true,
+                        prettify: true
       # autolink:         true,
       # fenced_code:      true,
       # generate_toc:     true,
@@ -52,27 +53,6 @@ end
       # strikethrough:    true,
       # tables:           true,
       # xhtml:            true
-
-def markdown(text)
-       render_options = {
-          filter_html: true,
-          hard_wrap: true,
-          link_attributes: { rel: 'nofollow' }
-       }
-
-     renderer = Redcarpet::Render::HTML.new(render_options)
-     extensions = {
-         autolink: true,
-         fenced_code_blocks: true,
-         lax_spacing: true,
-         no_intra_emphasis: true,
-         strikethrough: true,
-         superscript: true
-     }
-
-     Redcarpet::Markdown.new(renderer, extensions).render(text)
-
-end
 
 
 # Disable HAML from messing with code indentation
@@ -116,7 +96,8 @@ helpers do
          lax_spacing: true,
          no_intra_emphasis: true,
          strikethrough: true,
-         superscript: true
+         superscript: true,
+         prettify: true
      }
 
      Redcarpet::Markdown.new(renderer, extensions).render(text)
@@ -129,7 +110,6 @@ end
 configure :build do
   set :site_url, "/ca-portfolio"
   set :relative_links, true
-
   activate :relative_assets
   activate :build_cleaner
 end
