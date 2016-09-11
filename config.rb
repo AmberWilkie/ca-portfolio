@@ -22,6 +22,9 @@ activate :blog do |blog|
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
 end
+# General configuration
+# set :relative_links, true
+# activate :directory_indexes
 # set :relative_links, false
 # page "/feed.xml", layout: false
 
@@ -70,6 +73,7 @@ set :haml, { ugly: true }
 
 # Build-specific configuration
 configure :build do
+  set :site_url, "/ca-portfolio"
   activate :relative_assets
   activate :build_cleaner
 end
