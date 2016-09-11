@@ -22,22 +22,20 @@
     = partial 'partials/blog_nav'
     .row.blog.view
       #main{:role => "main"}
-        %h2.blog= current_article.title
+        %h2.blogheader= current_article.title
         %span.blog= current_article.date.strftime('%b %e')
         = yield
-      %aside
-        %h2 Recent Articles
-        %ol
-          - blog.articles[0...10].each do |article|
-            %li
-              = link_to article.title, article
-              %span= article.date.strftime('%b %e')
-        %h2 Tags
-        %ol
-          - blog.tags.each do |tag, articles|
-            %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
-        %h2 By Year
-        %ol
-          - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-            %li= link_to "#{year} (#{articles.size})", blog_year_path(year)
+      .aside
+        .small-6.columns.footofawesome
+          %h4.blogheader Recent Articles
+          %ul.left-align
+            - blog.articles[0...10].each do |article|
+              %li
+                = link_to article.title, article
+                %span= article.date.strftime('%b %e')
+        .small-6.columns.footofawesome
+          %h4.blogheader Tags
+          %ul.left-align
+            - blog.tags.each do |tag, articles|
+              %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
     = partial 'partials/footer'
