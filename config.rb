@@ -37,6 +37,9 @@ activate :syntax, line_numbers: false
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true
 
+# Disable HAML from messing with code indentation
+set :haml, { ugly: true }
+
 # module ::Middleman::Syntax::Highlighter
 #   def self.highlight(code, language=nil, opts={})
 #     Pygments.highlight(code, lexer: language)

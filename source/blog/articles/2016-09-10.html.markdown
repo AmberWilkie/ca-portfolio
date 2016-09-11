@@ -10,22 +10,32 @@ Let's investigate.
 
 # What is rake?
 
-Rake is a native tool for Ruby, similar to Unix's "make". Written by Jim Weirich, It is used to handle administrative commands or tasks, which are stored either in a Rakefile or in a .rake file. One can write their own rake tasks, specific to their application. There are rake tasks natively built into Ruby and Rails that perform common functions. Rake is a Domain Specific Language (DSL), which means you can only use it for things related to Ruby. Rake allows one to write tasks in the Ruby language and execute them on the command line. What can you do with rake? Anyone who has worked with Rails is familiar with database migrations: rails db:migrate rake db:migrate These are the same function, and rake is carrying out the task in either case. Imagine if you had to manually call all the migrations and make those adjustments to the database. Rake does that for you. This command will pull up a list of available rake functions in your environment: rake --tasks Rake uses Dependencies Most of the code we write in Ruby is "imperative" -- that is, you write a function and then call it. If you want one function to run before another, you put it inside the first, like so:
+Rake is a native tool for Ruby, similar to Unix's "make". Written by Jim Weirich, It is used to handle administrative commands or tasks, which are stored either in a Rakefile or in a .rake file. One can write their own rake tasks, specific to their application. There are rake tasks natively built into Ruby and Rails that perform common functions.
+
+Rake is a Domain Specific Language (DSL), which means you can only use it for things related to Ruby. Rake allows one to write tasks in the Ruby language and execute them on the command line.
+
+## What can you do with rake?
+
+### Can I have three here?
+
+### And another three?
+
+Anyone who has worked with Rails is familiar with database migrations: rails db:migrate rake db:migrate These are the same function, and rake is carrying out the task in either case. Imagine if you had to manually call all the migrations and make those adjustments to the database. Rake does that for you. This command will pull up a list of available rake functions in your environment: rake --tasks Rake uses Dependencies Most of the code we write in Ruby is "imperative" -- that is, you write a function and then call it. If you want one function to run before another, you put it inside the first, like so:
 
 ```ruby
-def method_one
-  # do a thing
-end
+  def method_one
+    # do a thing
+  end
 
-def method_two
-  method_one
-  # do another thing
-end
+  def method_two
+   method_one
+   # do another thing
+  end
 
-def method_three
-  method_one
-  # do a third thing
-end
+  def method_three
+   method_one
+   # do a third thing
+  end
 ```
 
 Both `method_two` and `method_three` require method_one to be run first, but if you need to run `method_two` and `method_three`, you'll run `method_one` twice. Sometimes that's ok, but many times it's not. Rake gets around this problem by using an entirely different computational method: dependencies. Consider this block of code from inside the cucumber.rake task file. Anyone who is doing acceptance tests with Cucumber in Rails has one:
