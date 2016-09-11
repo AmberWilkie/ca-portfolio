@@ -35,7 +35,7 @@ end
 ###
 # Markdown
 ###
-# activate :syntax, line_numbers: false
+activate :syntax, line_numbers: false
 set :markdown_engine, :redcarpet
 set :markdown, smartypants: true,
                         autolink: true,
@@ -58,18 +58,6 @@ set :markdown, smartypants: true,
 # Disable HAML from messing with code indentation
 set :haml, { ugly: true }
 
-# module ::Middleman::Syntax::Highlighter
-#   def self.highlight(code, language=nil, opts={})
-#     Pygments.highlight(code, lexer: language)
-#   end
-# end
-
-###
-# Code highlighting
-###
-
-# activate :rouge_syntax, :line_numbers => false
-
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
@@ -80,30 +68,6 @@ helpers do
   def is_page_active(page)
     current_page.url == page ? {class: 'active'} : {}
   end
-
-  module MarkdownHelper
-     def markdown(text)
-       render_options = {
-          filter_html: true,
-          hard_wrap: true,
-          link_attributes: { rel: 'nofollow' }
-       }
-
-     renderer = Redcarpet::Render::HTML.new(render_options)
-     extensions = {
-         autolink: true,
-         fenced_code_blocks: true,
-         lax_spacing: true,
-         no_intra_emphasis: true,
-         strikethrough: true,
-         superscript: true,
-         prettify: true
-     }
-
-     Redcarpet::Markdown.new(renderer, extensions).render(text)
-
-    end
- end
 end
 
 # Build-specific configuration

@@ -4,11 +4,7 @@
     %title= current_page.data.title || "Amber's Baller Portfolio"
     %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css", :rel => "stylesheet"}/
 
-
-
-
     = stylesheet_link_tag :site
-    = stylesheet_link_tag :code
     = javascript_include_tag :jquery
     = javascript_include_tag :foundation
     = javascript_include_tag :all
@@ -24,7 +20,7 @@
 
   %body
     = partial 'partials/blog_nav'
-    .row.blog
+    .row.blog.view
       #main{:role => "main"}
         %h3= current_article.title
         %span.blog= current_article.date.strftime('%b %e')

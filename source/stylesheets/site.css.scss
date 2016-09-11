@@ -353,6 +353,15 @@ hr {
     padding-top: 1em;
     padding-bottom: 2em;
   }
+    .view {
+      text-align: left;
+      padding: 1em;
+    }
+  .left-image {
+    float: left;
+    margin: .8em;
+  }
+
   .orangehr.blog {
     max-width: 300px;
     border-color: #ff9012;
@@ -372,21 +381,25 @@ hr {
   **************************************/
 .prettyprint {
   font-weight: bold;
-  background-color: #d9d9d9;
+  background-color: #f8f8f9;
   padding: .1em;
+  color: #404040;
+  font-family: Menlo,Monaco,"Courier New",Courier,monospace;
+  font-weight: normal;
 }
 
 .highlight {
   max-width: 80%;
   margin: 1em;
   padding: 1em;
-  background-color: #d9d9d9;
+  background-color: #f8f8f9;
+  border-radius: 3px;
   text-align: left;
 }
 code {
   font-family: Menlo,Monaco,"Courier New",Courier,monospace;
   font-weight: normal;
-  color: #0a0a0a;
+  color: #404040;
   background-color: inherit;
   border: 0px solid #cacaca;
   padding: 0px;
