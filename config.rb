@@ -13,7 +13,7 @@ activate :blog do |blog|
 
   blog.tag_template = "blog/tag.html"
   blog.calendar_template = "blog/calendar.html"
-  blog.prefix = "/blog"
+  blog.prefix = "blog"
 
   # page "blog/articles/*", :layout => :blog_layout
 
@@ -22,7 +22,7 @@ activate :blog do |blog|
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
 end
-
+# set :relative_links, false
 # page "/feed.xml", layout: false
 
 # Reload the browser automatically whenever files change
