@@ -19,8 +19,9 @@
       ga('send', 'pageview');
 
   %body
+    = partial 'partials/blog_nav'
     #main{:role => "main"}
-      %h2= current_article.title
+      %h3= current_article.title
       %span.blog= current_article.date.strftime('%b %e')
       = yield
     %aside
