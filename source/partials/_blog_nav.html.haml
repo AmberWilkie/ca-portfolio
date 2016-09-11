@@ -10,13 +10,13 @@
         %ul.dropdown.menu{"data-dropdown-menu" => ""}
           %ul.menu.social{"data-responsive-menu" => "drilldown small-dropdown"}
             %li
-              %a{:href => "/#projects"} Projects
+              =link_to 'Projects', '/#projects'
             %li
-              %a{:href => "/#about"} About
+              =link_to 'About', "/#about"
             %li
-              %a{:href => "/#contact"} Contact
+              =link_to 'Contact', "/#contact"
             %li
-              %a{:href => "/blog"} Blog
+              =link_to 'Blog', "/blog"
             %li
               %a{:href => "#"} @
               %ul.menu{"data-submenu" => ""}
