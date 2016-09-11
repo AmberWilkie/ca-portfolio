@@ -22,7 +22,7 @@
     = partial 'partials/blog_nav'
     .row.blog.view
       #main{:role => "main"}
-        %h3= current_article.title
+        %h2.blog= current_article.title
         %span.blog= current_article.date.strftime('%b %e')
         = yield
       %aside
