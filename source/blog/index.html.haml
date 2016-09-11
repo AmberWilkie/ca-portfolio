@@ -15,7 +15,7 @@ layout: blog_index_layout
   /
     use article.summary(250) if you have Nokogiri available to show just
     the first 250 characters
-  = article.summary
+  = article.summary(250)
   = link_to 'Read more…', article
   %hr
 - if paginate
