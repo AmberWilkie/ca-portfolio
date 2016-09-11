@@ -35,7 +35,16 @@ end
 ###
 activate :syntax, line_numbers: false
 set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, smartypants: true
+set :markdown, fenced_code_blocks: true, smartypants: true,
+      autolink:         true,
+      fenced_code:      true,
+      generate_toc:     true,
+      gh_blockcode:     true,
+      hard_wrap:        true,
+      no_intraemphasis: true,
+      strikethrough:    true,
+      tables:           true,
+      xhtml:            true
 
 # Disable HAML from messing with code indentation
 set :haml, { ugly: true }
