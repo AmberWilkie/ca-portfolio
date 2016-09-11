@@ -16,6 +16,8 @@ gem 'middleman-sprockets', '~> 4.0.0.rc'
 gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
 gem "middleman-blog"
 gem 'nokogiri'
+gem 'middleman-syntax'
+# gem 'pygments.rb', '~> 0.6.3'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 

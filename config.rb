@@ -1,4 +1,5 @@
 require 'extensions/build_cleaner'
+# require 'pygments'
 
 page '/*.xml', layout: false
 page '/*.json', layout: false
@@ -28,6 +29,25 @@ end
 configure :development do
   activate :livereload
 end
+
+###
+# Markdown
+###
+activate :syntax, line_numbers: false
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
+
+# module ::Middleman::Syntax::Highlighter
+#   def self.highlight(code, language=nil, opts={})
+#     Pygments.highlight(code, lexer: language)
+#   end
+# end
+
+###
+# Code highlighting
+###
+
+# activate :rouge_syntax, :line_numbers => false
 
 # Methods defined in the helpers block are available in templates
 # helpers do
