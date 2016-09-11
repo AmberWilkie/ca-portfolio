@@ -348,3 +348,21 @@ hr {
     text-transform: uppercase;
     font-weight: bold;
   }
+  .row.blog {
+    background-color: #ffffff;
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+  .orangehr.blog {
+    max-width: 300px;
+    border-color: #ff9012;
+    border-width: 1px;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #ff9012;
+  }

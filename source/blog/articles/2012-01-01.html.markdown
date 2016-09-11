@@ -1,10 +1,7 @@
 ---
 title: Example Article
-date: 2012-01-01
+date: '2012-01-01 07:17 UTC'
 tags: example
 ---
 
 This is an example article. You probably want to delete it and write your own articles!
-
-Ok what if I want a photo?
-![here's my image](#)

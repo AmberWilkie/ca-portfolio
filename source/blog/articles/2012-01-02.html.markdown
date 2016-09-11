@@ -1,6 +1,6 @@
 ---
 title: Working Example?
-date: 2012-01-01T00:00:00.000Z
+date: 2012-01-02T00:00:00.000Z
 tags: example
 ---
 

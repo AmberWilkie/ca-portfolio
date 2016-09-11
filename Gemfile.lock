@@ -191,6 +191,7 @@ DEPENDENCIES
   middleman-deploy!
   middleman-livereload
   middleman-sprockets (~> 4.0.0.rc)
+  nokogiri
   pry
   pry-byebug
   redcarpet (~> 3.3, >= 3.3.3)
