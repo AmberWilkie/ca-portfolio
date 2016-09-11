@@ -5,15 +5,15 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 activate :blog do |blog|
-  blog.permalink = "/articles/{year}-{month}-{day}.html"
+  blog.permalink = "articles/{year}-{month}-{day}.html"
   # Matcher for blog source files
-  blog.sources = "/articles/{year}-{month}-{day}.html"
+  blog.sources = "articles/{year}-{month}-{day}.html"
   # blog.taglink = "tags/{tag}.html"
   blog.layout = "./layouts/blog_layout"
 
   blog.tag_template = "blog/tag.html"
   blog.calendar_template = "blog/calendar.html"
-  blog.prefix = "blog"
+  blog.prefix = "/blog"
 
   # page "blog/articles/*", :layout => :blog_layout
 
@@ -23,7 +23,6 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 # General configuration
-# set :relative_links, true
 # activate :directory_indexes
 # set :relative_links, false
 # page "/feed.xml", layout: false
@@ -79,6 +78,8 @@ end
 # Build-specific configuration
 configure :build do
   set :site_url, "/ca-portfolio"
+  set :relative_links, true
+
   activate :relative_assets
   activate :build_cleaner
 end
