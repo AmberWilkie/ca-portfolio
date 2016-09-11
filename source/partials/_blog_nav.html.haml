@@ -5,7 +5,8 @@
       .title-bar-title Menu of Awesome
     #main-menu.top-bar
       .top-bar-left
-        %img.logo{:src => "/images/logo.png"}
+        = link_to "/index.html" do
+          = image_tag '/images/logo.png', class: 'logo'
       .top-bar-right
         %ul.dropdown.menu{"data-dropdown-menu" => ""}
           %ul.menu.social{"data-responsive-menu" => "drilldown small-dropdown"}
