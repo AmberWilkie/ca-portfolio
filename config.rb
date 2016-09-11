@@ -70,6 +70,11 @@ set :haml, { ugly: true }
 #     "Helping"
 #   end
 # end
+helpers do
+  def is_page_active(page)
+    current_page.url == page ? {class: 'active'} : {}
+  end
+end
 
 # Build-specific configuration
 configure :build do
@@ -79,7 +84,8 @@ configure :build do
 end
 
 activate :deploy do |deploy|
+  deploy.build_before = true
   deploy.deploy_method = :git
   # deploy.branch = 'master'
-  deploy.build_before = true
+
 end
