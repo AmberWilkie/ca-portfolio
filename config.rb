@@ -35,18 +35,45 @@ end
 ###
 # Markdown
 ###
-activate :syntax, line_numbers: false
-set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, smartypants: true,
-      autolink:         true,
-      fenced_code:      true,
-      generate_toc:     true,
-      gh_blockcode:     true,
-      hard_wrap:        true,
-      no_intraemphasis: true,
-      strikethrough:    true,
-      tables:           true,
-      xhtml:            true
+# activate :syntax, line_numbers: false
+# set :markdown_engine, :redcarpet
+# set :markdown, smartypants: true,
+#                         autolink: true,
+#                         fenced_code_blocks: true,
+#                         no_intra_emphasis: true,
+#                         superscript: true,
+#                         footnotes: true
+      # autolink:         true,
+      # fenced_code:      true,
+      # generate_toc:     true,
+      # gh_blockcode:     true,
+      # hard_wrap:        true,
+      # no_intraemphasis: true,
+      # strikethrough:    true,
+      # tables:           true,
+      # xhtml:            true
+
+def markdown(text)
+       render_options = {
+          filter_html: true,
+          hard_wrap: true,
+          link_attributes: { rel: 'nofollow' }
+       }
+
+     renderer = Redcarpet::Render::HTML.new(render_options)
+     extensions = {
+         autolink: true,
+         fenced_code_blocks: true,
+         lax_spacing: true,
+         no_intra_emphasis: true,
+         strikethrough: true,
+         superscript: true
+     }
+
+     Redcarpet::Markdown.new(renderer, extensions).render(text)
+
+end
+
 
 # Disable HAML from messing with code indentation
 set :haml, { ugly: true }
@@ -73,6 +100,29 @@ helpers do
   def is_page_active(page)
     current_page.url == page ? {class: 'active'} : {}
   end
+
+  module MarkdownHelper
+     def markdown(text)
+       render_options = {
+          filter_html: true,
+          hard_wrap: true,
+          link_attributes: { rel: 'nofollow' }
+       }
+
+     renderer = Redcarpet::Render::HTML.new(render_options)
+     extensions = {
+         autolink: true,
+         fenced_code_blocks: true,
+         lax_spacing: true,
+         no_intra_emphasis: true,
+         strikethrough: true,
+         superscript: true
+     }
+
+     Redcarpet::Markdown.new(renderer, extensions).render(text)
+
+    end
+ end
 end
 
 # Build-specific configuration

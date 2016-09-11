@@ -20,6 +20,7 @@ gem 'middleman-syntax'
 # gem 'pygments.rb', '~> 0.6.3'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+# gem 'kramdown'
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
