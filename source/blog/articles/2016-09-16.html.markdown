@@ -2,6 +2,7 @@
 title: Week Six: Rails!
 date: 2016-09-16 14:23 UTC
 tags: rails, ruby
+published: true
 ---
 This week at [Craft Academy](http://www.craftacademy.se), we really dove into the meat of the bootcamp: Rails. Most of the week felt really good - learning some of the tools we'll likely use every day in our future careers as Rails developers. Rails may have a bit of a difficult interface at the beginning (so many folders and files!) but once you get clear about the relationship between the controller, views and models, it really feels good.
 
