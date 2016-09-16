@@ -1,5 +1,5 @@
 ---
-title: Week Six: Rails!
+title: Week Six: Rails
 date: 2016-09-16 14:23 UTC
 tags: rails, ruby
 published: true
