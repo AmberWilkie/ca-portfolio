@@ -1,0 +1,34 @@
+---
+title: Week Six: Rails!
+date: 2016-09-16 14:23 UTC
+tags: rails, ruby
+---
+This week at [Craft Academy](http://www.craftacademy.se), we really dove into the meat of the bootcamp: Rails. Most of the week felt really good - learning some of the tools we'll likely use every day in our future careers as Rails developers. Rails may have a bit of a difficult interface at the beginning (so many folders and files!) but once you get clear about the relationship between the controller, views and models, it really feels good.
+
+![Screenshot four from Garden Club](images/garden-app-screenshots/four.png)
+
+My colleague Susanna and I worked together again and I believe we're becoming something of a good team. She's great at research and looks at problems differently than I do, which often leads to unexpected collaborations. While I was fiddling with Facebook OAuthorization, she constructed the main functionality of our app. Screenshots of the thing are above and below. I'm fairly proud of our little baby app. It doesn't do too much but we made it with our own fingers (standing on the backs of the brilliant folks who wrote Rails and all the gems). You can actually play with it [online](http://garden-club.herokuapp.com/) if you're feeling saucy.
+
+![Screenshot two from Garden Club](images/garden-app-screenshots/two.png)
+
+It's Friday afternoon and we still have the weekend to work, but here's what we've accomplished from the list of things our "coach" requested for the app:
+- ~~Build and deploy a SAAS (Software as as Service) application.~~
+- Implement user ~~authentication and~~ authorization (~~Devise~~, CanCanCan)
+- ~~Implement OAuth authentication~~
+- Implement some sort of market place functionality (services or products)
+- Make use of a payment gateway (PayPal, Klarna, Stripe)
+- Make use of the geocoding and maps (Google Maps, OpenStreet Map) for vendors or service providers.
+- Implement a rating system (for products, vendors or something else)
+- Set up a third party API integration (TraficLab, Facebook, etc)
+
+So, yep.
+
+![Screenshot three from Garden Club](images/garden-app-screenshots/three.png)
+
+Still, I'm proud. Our app does a thing and it looks pretty (thank you Susanna) and it's something we can build on either later in the course or for our own personal projects.
+
+![Screenshot one from Garden Club](images/garden-app-screenshots/one.png)
+
+Craft Academy also celebrated the graduation of the seniors yesterday! It has been really nice to have a group of folks six weeks ahead of us in terms of learning, ability, and yes, stress. Next week we'll start doing the things they were on when we joined. We've watched them struggle and now we get to struggle with the same challenges.
+
+We had a party last night in honor of them and it got really crazy, as one would imagine happens when you put a bunch of folks in a room that are stressed to the max with a bunch of alcohol. We're all feeling it today, but obviously still working. It's bootcamp. No rest for the weary.
