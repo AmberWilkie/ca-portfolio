@@ -27,6 +27,8 @@ end
 # set :relative_links, false
 # page "/feed.xml", layout: false
 
+activate :dotenv
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -76,11 +78,21 @@ configure :build do
   set :relative_links, true
   activate :relative_assets
   activate :build_cleaner
+  activate :dotenv, env: '.env.build'
+
 end
 
-activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.deploy_method = :git
-  # deploy.branch = 'master'
+# activate :deploy do |deploy|
+#   deploy.build_before = true
+#   deploy.deploy_method = :git
+#   # deploy.branch = 'master'
+#
+# end
 
+activate :deploy do |deploy|
+  deploy.deploy_method   = :ftp
+  deploy.host            = 'portfolio.amberwilkie.com'
+  deploy.path            = '/'
+  deploy.user            = 'amberwil'
+  deploy.password        = ENV['FTP_PASS']
 end

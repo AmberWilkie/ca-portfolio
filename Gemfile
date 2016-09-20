@@ -27,6 +27,8 @@ gem "builder", "~> 3.0"
 
 #Template engine
 gem 'haml'
+#store secret variables
+gem 'middleman-dotenv', '~> 2.0'
 
 group :development, :test do
   gem 'capybara'
