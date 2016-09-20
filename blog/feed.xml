@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/blog</id>
+  <link href="http://blog.url.com/blog"/>
+  <link href="http://blog.url.com/blog/feed.xml" rel="self"/>
+  <updated>2016-09-16T16:23:00+02:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Week Six - Rails!</title>
+    <link rel="alternate" href="http://blog.url.com/blog/articles/2016-09-16.html"/>
+    <id>http://blog.url.com/blog/articles/2016-09-16.html</id>
+    <published>2016-09-16T16:23:00+02:00</published>
+    <updated>2016-09-20T18:35:12+02:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;This week at &lt;a href="http://www.craftacademy.se"&gt;Craft Academy&lt;/a&gt;, we really dove into the meat of the bootcamp: Rails. Most of the week felt really good - learning some of the tools we&amp;rsquo;ll likely use every day in our future careers as Rails developers. Rails may have a bit of a difficult interface at the beginning (so many folders and files!) but once you get clear about the relationship between the controller, views and models, it really feels good.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="images/garden-app-screenshots/four.png" alt="Screenshot four from Garden Club" /&gt;&lt;/p&gt;
+
+&lt;p&gt;My colleague Susanna and I worked together again and I believe we&amp;rsquo;re becoming something of a good team. She&amp;rsquo;s great at research and looks at problems differently than I do, which often leads to unexpected collaborations. While I was fiddling with Facebook OAuthorization, she constructed the main functionality of our app. Screenshots of the thing are above and below. I&amp;rsquo;m fairly proud of our little baby app. It doesn&amp;rsquo;t do too much but we made it with our own fingers (standing on the backs of the brilliant folks who wrote Rails and all the gems). You can actually play with it &lt;a href="http://garden-club.herokuapp.com/"&gt;online&lt;/a&gt; if you&amp;rsquo;re feeling saucy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="images/garden-app-screenshots/two.png" alt="Screenshot two from Garden Club" /&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s Friday afternoon and we still have the weekend to work, but here&amp;rsquo;s what we&amp;rsquo;ve accomplished from the list of things our &amp;ldquo;coach&amp;rdquo; requested for the app:
+- ~~Build and deploy a SAAS (Software as as Service) application.~~
+- Implement user ~~authentication and~~ authorization (~~Devise~~, CanCanCan)
+- ~~Implement OAuth authentication~~
+- Implement some sort of market place functionality (services or products)
+- Make use of a payment gateway (PayPal, Klarna, Stripe)
+- Make use of the geocoding and maps (Google Maps, OpenStreet Map) for vendors or service providers.
+- Implement a rating system (for products, vendors or something else)
+- Set up a third party API integration (TraficLab, Facebook, etc)&lt;/p&gt;
+
+&lt;p&gt;So, yep.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="images/garden-app-screenshots/three.png" alt="Screenshot three from Garden Club" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Still, I&amp;rsquo;m proud. Our app does a thing and it looks pretty (thank you Susanna) and it&amp;rsquo;s something we can build on either later in the course or for our own personal projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="images/garden-app-screenshots/one.png" alt="Screenshot one from Garden Club" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Craft Academy also celebrated the graduation of the seniors yesterday! It has been really nice to have a group of folks six weeks ahead of us in terms of learning, ability, and yes, stress. Next week we&amp;rsquo;ll start doing the things they were on when we joined. We&amp;rsquo;ve watched them struggle and now we get to struggle with the same challenges.&lt;/p&gt;
+
+&lt;p&gt;We had a party last night in honor of them and it got really crazy, as one would imagine happens when you put a bunch of folks in a room that are stressed to the max with a bunch of alcohol. We&amp;rsquo;re all feeling it today, but obviously still working. It&amp;rsquo;s bootcamp. No rest for the weary.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>What the heck is Rake?</title>
+    <link rel="alternate" href="http://blog.url.com/blog/articles/2016-09-10.html"/>
+    <id>http://blog.url.com/blog/articles/2016-09-10.html</id>
+    <published>2016-09-10T09:17:00+02:00</published>
+    <updated>2016-09-11T16:08:36+02:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src="images/rake.png" alt="Rake" style="width: 350px;" class="left-image"/&gt;We&amp;rsquo;re five weeks into bootcamp at &lt;a href="http://www.craftacademy.se"&gt;Craft Academy&lt;/a&gt; and much less of programming seems like impenetrable magic. Servers? People like us set those up. Hackers? They pull up the console on websites and type away. But rake? What the heck is that thing that runs all the &amp;ldquo;tasks&amp;rdquo; and does things like combine Rspec and Cucumber results for Travis? It seems half the time you&amp;rsquo;re having one of those horrendous &amp;ldquo;ugly&amp;rdquo; errors (seemingly endless lines of white code filled with paths to things you&amp;rsquo;ve never heard of), there&amp;rsquo;s a problem with the Rakefile. A coach comes in and gives you a mysterious line of code to paste into that file and BOOM! Your deploy works now. WTF?&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s investigate.&lt;/p&gt;
+
+&lt;h3&gt;What is rake?&lt;/h3&gt;
+
+&lt;p&gt;Rake is a native tool for Ruby, similar to Unix&amp;rsquo;s &amp;ldquo;make&amp;rdquo;. Written by &lt;a href="https://en.wikipedia.org/wiki/Jim_Weirich"&gt;Jim Weirich&lt;/a&gt;, it is used to handle administrative commands or tasks, which are stored either in a Rakefile or in a &lt;code class="prettyprint"&gt;.rake&lt;/code&gt; file. One can write their own rake tasks, specific to their application. There are rake tasks natively built into Ruby and Rails that perform common functions.&lt;/p&gt;
+
+&lt;p&gt;Rake is a Domain Specific Language (DSL), which means you can only use it for things related to Ruby. Rake allows one to write tasks in the Ruby language and execute them on the command line.&lt;/p&gt;
+
+&lt;h3&gt;What can you do with rake?&lt;/h3&gt;
+
+&lt;p&gt;Anyone who has worked with Rails is familiar with database migrations:&lt;/p&gt;
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;  &lt;span class="n"&gt;rails&lt;/span&gt; &lt;span class="n"&gt;db&lt;/span&gt;&lt;span class="ss"&gt;:migrate&lt;/span&gt;
+  &lt;span class="n"&gt;rake&lt;/span&gt; &lt;span class="n"&gt;db&lt;/span&gt;&lt;span class="ss"&gt;:migrate&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;These are the same function, and rake is carrying out the task in either case. Imagine if you had to manually call all the migrations and make those adjustments to the database. Rake does that for you. This command will pull up a list of available rake functions in your environment:&lt;/p&gt;
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="n"&gt;rake&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;tasks&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Rake uses Dependencies&lt;/h3&gt;
+
+&lt;p&gt;Most of the code we write in Ruby is &amp;ldquo;imperative&amp;rdquo; &amp;ndash; that is, you write a function and then call it. If you want one function to run before another, you put it inside the first, like so:&lt;/p&gt;
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;method_one&lt;/span&gt;
+    &lt;span class="c1"&gt;# do a thing&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;method_two&lt;/span&gt;
+   &lt;span class="n"&gt;method_one&lt;/span&gt;
+   &lt;span class="c1"&gt;# do another thing&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;method_three&lt;/span&gt;
+   &lt;span class="n"&gt;method_one&lt;/span&gt;
+   &lt;span class="c1"&gt;# do a third thing&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Both &lt;code class="prettyprint"&gt;method_two&lt;/code&gt; and &lt;code class="prettyprint"&gt;method_three&lt;/code&gt; require method_one to be run first, but if you need to run &lt;code class="prettyprint"&gt;method_two&lt;/code&gt; and &lt;code class="prettyprint"&gt;method_three&lt;/code&gt;, you&amp;rsquo;ll run &lt;code class="prettyprint"&gt;method_one&lt;/code&gt; twice. Sometimes that&amp;rsquo;s ok, but many times it&amp;rsquo;s not. Rake gets around this problem by using an entirely different computational method: dependencies. Consider this block of code from inside the &lt;code class="prettyprint"&gt;cucumber.rake&lt;/code&gt; task file. Anyone who is doing acceptance tests with Cucumber in Rails has one:&lt;/p&gt;
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="n"&gt;namespace&lt;/span&gt; &lt;span class="ss"&gt;:cucumber&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="no"&gt;Cucumber&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Rake&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Task&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;new&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="ss"&gt;:ok&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s1"&gt;'test:prepare'&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+  &lt;span class="s1"&gt;'Run features that should pass'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+  &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;binary&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;vendored_cucumber_bin&lt;/span&gt;
+  &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;fork&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;
+  &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;profile&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'default'&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="p"&gt;[.&lt;/span&gt;&lt;span class="nf"&gt;.&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;desc&lt;/span&gt; &lt;span class="s1"&gt;'Alias for cucumber:ok'&lt;/span&gt;
+  &lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:cucumber&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s1"&gt;'cucumber:ok'&lt;/span&gt;
+  &lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:default&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="ss"&gt;:cucumber&lt;/span&gt;
+  &lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:features&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="ss"&gt;:cucumber&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="no"&gt;STDERR&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;puts&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;All those hash rockets (&lt;code class="prettyprint"&gt;=&amp;gt;&lt;/code&gt;) represent dependencies. The first method won&amp;rsquo;t run until the second has. When there are multiple methods that rely on multiple other methods, Rake will actually make a decision for the programmer about which should run first, arranging it so that all the dependent methods are run after the methods they depend on.&lt;/p&gt;
+
+&lt;h3&gt;Writing Rake tasks&lt;/h3&gt;
+
+&lt;p&gt;I can see my Bootcamp teachers cringing at that headline, so I&amp;rsquo;ll preface this by saying: I&amp;rsquo;m in a branch I plan to dump and I promise not to do this in any code I keep without talking to you about it first. So, this all sounds great, right? And we want to write our own rake tasks to do things we might find tedious to keep typing over and over. Here we go! In Rails, you keep your custom Rake tasks inside &lt;code class="prettyprint"&gt;/lib/tasks/*.rake&lt;/code&gt; . Check it:&lt;/p&gt;
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="c1"&gt;# /lib/tasks/play.rake&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:play&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;"Here's a rake task!"&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we just call the task in our command line!&lt;/p&gt;
+
+&lt;p&gt;What about those dependencies?&lt;/p&gt;
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="c1"&gt;# /lib/tasks/play.rake&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:play&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;"Here's a rake task!"&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:raking&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:play&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;"Should put this after :play"&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Rake will run the &amp;ldquo;dependent&amp;rdquo; method after the first. If we complicate things by requiring two methods, the computer will decide which should go first. Rake can do nearly limitless, ridiculously complicated tasks to simplify our workflows. No doubt this is all outside of the scope of the bootcamp, but really exciting for our future as busy developers.&lt;/p&gt;
+
+&lt;h3&gt;Sources and further reading:&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://martinfowler.com/articles/rake.html"&gt;Using the Rake Build Language&lt;/a&gt;, Martin Fowler&lt;br&gt;
+&lt;a href="http://rake.rubyforge.org/"&gt;Rake Documentation&lt;/a&gt;&lt;br&gt;
+And promising FTP docs: &lt;a href="http://ruby-doc.org/stdlib-2.0.0/libdoc/rake/rdoc/Rake/FtpUploader.html"&gt;FtpUploader&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+</feed>

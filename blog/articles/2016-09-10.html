@@ -1,0 +1,216 @@
+<HTML5>
+<head>
+<meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
+<title>What the heck is Rake?</title>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet'>
+<link href="../../stylesheets/site.css" rel="stylesheet" />
+<script src="../../javascripts/jquery.js"></script>
+<script src="../../javascripts/foundation.js"></script>
+<script src="../../javascripts/all.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-2837192-9', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+<body>
+<div class='top-bar-container sticky-container' data-sticky-container=''>
+<div class='row graynav'>
+<div class='title-bar' data-hide-for='medium' data-responsive-toggle='main-menu'>
+<button class='menu-icon' data-toggle='' type='button'></button>
+<div class='title-bar-title'>Menu of Awesome</div>
+</div>
+<div class='top-bar' id='main-menu'>
+<div class='top-bar-left'>
+<a href="../../"><img src="../../images/logo.png" class="logo" alt="Logo" />
+</a></div>
+<div class='top-bar-right'>
+<ul class='dropdown menu' data-dropdown-menu=''>
+<ul class='menu social' data-responsive-menu='drilldown small-dropdown'>
+<li>
+<a href="../../#projects">Projects</a>
+</li>
+<li>
+<a href="../../#about">About</a>
+</li>
+<li>
+<a href="#contact">Contact</a>
+</li>
+<li>
+<a href="../">Blog</a>
+</li>
+<li>
+<a href='#'>@</a>
+<ul class='menu' data-submenu=''>
+<li>
+<a href='https://github.com/amberwilkie'>
+<i class='step fi-social-github size-24'></i>
+</a>
+</li>
+<li>
+<a href='https://twitter.com/heyamberwilkie'>
+<i class='step fi-social-twitter size-24'></i>
+</a>
+</li>
+<li>
+<a href='https://www.facebook.com/amber.lupin'>
+<i class='step fi-social-facebook size-24'></i>
+</a>
+</li>
+<li>
+<a href='https://www.instagram.com/amberwphoto/'>
+<i class='step fi-social-instagram size-24'></i>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class='row blog view'>
+<div id='main' role='main'>
+<h2 class='blogheader'>What the heck is Rake?</h2>
+<span class='blog'>Sep 10</span>
+<p><img src="images/rake.png" alt="Rake" style="width: 350px;" class="left-image"/>We&rsquo;re five weeks into bootcamp at <a href="http://www.craftacademy.se">Craft Academy</a> and much less of programming seems like impenetrable magic. Servers? People like us set those up. Hackers? They pull up the console on websites and type away. But rake? What the heck is that thing that runs all the &ldquo;tasks&rdquo; and does things like combine Rspec and Cucumber results for Travis? It seems half the time you&rsquo;re having one of those horrendous &ldquo;ugly&rdquo; errors (seemingly endless lines of white code filled with paths to things you&rsquo;ve never heard of), there&rsquo;s a problem with the Rakefile. A coach comes in and gives you a mysterious line of code to paste into that file and BOOM! Your deploy works now. WTF?</p>
+
+<p>Let&rsquo;s investigate.</p>
+
+<h3>What is rake?</h3>
+
+<p>Rake is a native tool for Ruby, similar to Unix&rsquo;s &ldquo;make&rdquo;. Written by <a href="https://en.wikipedia.org/wiki/Jim_Weirich">Jim Weirich</a>, it is used to handle administrative commands or tasks, which are stored either in a Rakefile or in a <code class="prettyprint">.rake</code> file. One can write their own rake tasks, specific to their application. There are rake tasks natively built into Ruby and Rails that perform common functions.</p>
+
+<p>Rake is a Domain Specific Language (DSL), which means you can only use it for things related to Ruby. Rake allows one to write tasks in the Ruby language and execute them on the command line.</p>
+
+<h3>What can you do with rake?</h3>
+
+<p>Anyone who has worked with Rails is familiar with database migrations:</p>
+<pre class="highlight ruby"><code>  <span class="n">rails</span> <span class="n">db</span><span class="ss">:migrate</span>
+  <span class="n">rake</span> <span class="n">db</span><span class="ss">:migrate</span>
+</code></pre>
+<p>These are the same function, and rake is carrying out the task in either case. Imagine if you had to manually call all the migrations and make those adjustments to the database. Rake does that for you. This command will pull up a list of available rake functions in your environment:</p>
+<pre class="highlight ruby"><code><span class="n">rake</span> <span class="o">--</span><span class="n">tasks</span>
+</code></pre>
+<h3>Rake uses Dependencies</h3>
+
+<p>Most of the code we write in Ruby is &ldquo;imperative&rdquo; &ndash; that is, you write a function and then call it. If you want one function to run before another, you put it inside the first, like so:</p>
+<pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">method_one</span>
+    <span class="c1"># do a thing</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">method_two</span>
+   <span class="n">method_one</span>
+   <span class="c1"># do another thing</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">method_three</span>
+   <span class="n">method_one</span>
+   <span class="c1"># do a third thing</span>
+  <span class="k">end</span>
+</code></pre>
+<p>Both <code class="prettyprint">method_two</code> and <code class="prettyprint">method_three</code> require method_one to be run first, but if you need to run <code class="prettyprint">method_two</code> and <code class="prettyprint">method_three</code>, you&rsquo;ll run <code class="prettyprint">method_one</code> twice. Sometimes that&rsquo;s ok, but many times it&rsquo;s not. Rake gets around this problem by using an entirely different computational method: dependencies. Consider this block of code from inside the <code class="prettyprint">cucumber.rake</code> task file. Anyone who is doing acceptance tests with Cucumber in Rails has one:</p>
+<pre class="highlight ruby"><code><span class="n">namespace</span> <span class="ss">:cucumber</span> <span class="k">do</span>
+  <span class="no">Cucumber</span><span class="o">::</span><span class="no">Rake</span><span class="o">::</span><span class="no">Task</span><span class="p">.</span><span class="nf">new</span><span class="p">({</span><span class="ss">:ok</span> <span class="o">=&gt;</span> <span class="s1">'test:prepare'</span><span class="p">},</span>
+  <span class="s1">'Run features that should pass'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
+  <span class="n">t</span><span class="p">.</span><span class="nf">binary</span> <span class="o">=</span> <span class="n">vendored_cucumber_bin</span>
+  <span class="n">t</span><span class="p">.</span><span class="nf">fork</span> <span class="o">=</span> <span class="kp">true</span>
+  <span class="n">t</span><span class="p">.</span><span class="nf">profile</span> <span class="o">=</span> <span class="s1">'default'</span>
+<span class="k">end</span>
+<span class="p">[.</span><span class="nf">.</span><span class="o">.</span><span class="p">]</span>
+<span class="n">desc</span> <span class="s1">'Alias for cucumber:ok'</span>
+  <span class="n">task</span> <span class="ss">:cucumber</span> <span class="o">=&gt;</span> <span class="s1">'cucumber:ok'</span>
+  <span class="n">task</span> <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="ss">:cucumber</span>
+  <span class="n">task</span> <span class="ss">:features</span> <span class="o">=&gt;</span> <span class="ss">:cucumber</span> <span class="k">do</span>
+  <span class="no">STDERR</span><span class="p">.</span><span class="nf">puts</span>
+<span class="k">end</span>
+</code></pre>
+<p>All those hash rockets (<code class="prettyprint">=&gt;</code>) represent dependencies. The first method won&rsquo;t run until the second has. When there are multiple methods that rely on multiple other methods, Rake will actually make a decision for the programmer about which should run first, arranging it so that all the dependent methods are run after the methods they depend on.</p>
+
+<h3>Writing Rake tasks</h3>
+
+<p>I can see my Bootcamp teachers cringing at that headline, so I&rsquo;ll preface this by saying: I&rsquo;m in a branch I plan to dump and I promise not to do this in any code I keep without talking to you about it first. So, this all sounds great, right? And we want to write our own rake tasks to do things we might find tedious to keep typing over and over. Here we go! In Rails, you keep your custom Rake tasks inside <code class="prettyprint">/lib/tasks/*.rake</code> . Check it:</p>
+<pre class="highlight ruby"><code><span class="c1"># /lib/tasks/play.rake</span>
+
+<span class="n">task</span> <span class="ss">:play</span> <span class="k">do</span>
+  <span class="nb">puts</span> <span class="s2">"Here's a rake task!"</span>
+<span class="k">end</span>
+</code></pre>
+<p>Now we just call the task in our command line!</p>
+
+<p>What about those dependencies?</p>
+<pre class="highlight ruby"><code><span class="c1"># /lib/tasks/play.rake</span>
+
+<span class="n">task</span> <span class="ss">:play</span> <span class="k">do</span>
+  <span class="nb">puts</span> <span class="s2">"Here's a rake task!"</span>
+<span class="k">end</span>
+
+<span class="n">task</span> <span class="ss">:raking</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="ss">:play</span><span class="p">]</span> <span class="k">do</span>
+  <span class="nb">puts</span> <span class="s2">"Should put this after :play"</span>
+<span class="k">end</span>
+</code></pre>
+<p>Rake will run the &ldquo;dependent&rdquo; method after the first. If we complicate things by requiring two methods, the computer will decide which should go first. Rake can do nearly limitless, ridiculously complicated tasks to simplify our workflows. No doubt this is all outside of the scope of the bootcamp, but really exciting for our future as busy developers.</p>
+
+<h3>Sources and further reading:</h3>
+
+<p><a href="http://martinfowler.com/articles/rake.html">Using the Rake Build Language</a>, Martin Fowler<br>
+<a href="http://rake.rubyforge.org/">Rake Documentation</a><br>
+And promising FTP docs: <a href="http://ruby-doc.org/stdlib-2.0.0/libdoc/rake/rdoc/Rake/FtpUploader.html">FtpUploader</a></p>
+
+</div>
+<div class='aside'>
+<div class='small-6 columns footofawesome'>
+<h4 class='blogheader'>Recent Articles</h4>
+<ul class='left-align'>
+<li>
+<a href="2016-09-16.html">Week Six - Rails!</a>
+<span>Sep 16</span>
+</li>
+<li>
+<a href="2016-09-10.html">What the heck is Rake?</a>
+<span>Sep 10</span>
+</li>
+</ul>
+</div>
+<div class='small-6 columns footofawesome'>
+<h4 class='blogheader'>Tags</h4>
+<ul class='left-align'>
+<li><a href="../tags/rake.html">rake (1)</a></li>
+<li><a href="../tags/ruby.html">ruby (2)</a></li>
+<li><a href="../tags/research.html">research (1)</a></li>
+<li><a href="../tags/rails.html">rails (1)</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class='row grayfooter' id='contact'>
+<div class='large-3 columns footofawesome'>
+&nbsp;
+</div>
+<div class='large-3 columns footofawesome'>
+<h5 class='h5foot'>Contact</h5>
+<div class='tinyhr'></div>
+Göteborg, Sverige
+<br>
+0720 08 27 07
+<br>
+amber@amberwilkie.com
+<br>
+<a class='footofawesome' href='http://www.amberwilkie.com' target='_new'>amberwilkie.com</a>
+</div>
+<div class='large-3 columns footofawesome'>
+<p>I'm just in bootcamp right now, but I graduate at the end of October and I've been busting ass. I will no doubt continue to bust ass to be the best possible junior developer candidate for <em>your</em> company. Onward!</p>
+</div>
+<div class='large-3 columns footofawesome'>
+&nbsp;
+</div>
+</div>
+
+</body>
+</HTML5>
