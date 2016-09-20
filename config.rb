@@ -1,5 +1,5 @@
 require 'extensions/build_cleaner'
-# require 'pygments'
+require 'pry'
 
 page '/*.xml', layout: false
 page '/*.json', layout: false
@@ -26,8 +26,6 @@ end
 # activate :directory_indexes
 # set :relative_links, false
 # page "/feed.xml", layout: false
-
-activate :dotenv
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -78,7 +76,6 @@ configure :build do
   set :relative_links, true
   activate :relative_assets
   activate :build_cleaner
-  activate :dotenv, env: '.env.build'
 
 end
 
@@ -88,9 +85,12 @@ end
 #   # deploy.branch = 'master'
 #
 # end
+activate :dotenv, env: '.env.build'
+binding.pry
 
 activate :deploy do |deploy|
   deploy.deploy_method   = :ftp
+  deploy.build_before    = true
   deploy.host            = 'portfolio.amberwilkie.com'
   deploy.path            = '/'
   deploy.user            = 'amberwil'
