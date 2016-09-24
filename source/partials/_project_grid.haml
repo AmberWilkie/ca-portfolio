@@ -2,11 +2,11 @@
   .row.grid
     %h3.grid Coding Projects
     .orangehr
-    .large-12.medium-12.columns
-      .row.data-equalizer{"data-equalizer" => "", "data-equalize-on" => "medium"}
+    .large-12.medium-12.columns{"data-equalize-by-row" => "true", "data-equalizer" => ""}
+      .row
       - data.projects.each do |project|
-        .large-4.medium-4.columns
-          .callout{"data-equalizer-watch" => ""}
+        .large-4.columns
+          .callout.column{"data-equalizer-watch" => ""}
             %h5.subheader= project[:name]
             %p= project[:description]
             - if project[:github] != nil
