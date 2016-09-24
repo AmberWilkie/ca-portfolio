@@ -1,0 +1,24 @@
+---
+title: Week 7 - AngularJS and Ionic frameworks
+date: 2016-09-24 14:47 UTC
+tags:
+---
+
+This week at [Craft Academy](http://www.craftacademy.se) we tackled *mobile* development with AngularJS and Ionic frameworks. Honestly, it was a lot to take and in and I feel I've barely scratched the surface of either framework, let alone having a firm grasp on how they connect with back-end API servers.
+
+Our project was a mobile application to save Cooper Test data. The Cooper Test is a highly judgmental evaluation of if you are in shape or not, based on your gender, your age, and how fast you can run in twelve minutes. On Monday, we built another BMI calculator, this time for our phones. So, the final message was: you're too fat and you run too slow.
+
+I tried to supplement bootcamp materials with the class on [AngularJS at Codecademy](https://www.codecademy.com/learn/learn-angularjs) and Ionic's own [introductory tutorial](https://ccoenraets.github.io/ionic-tutorial/). I'm still working on the Ionic one and plan to finish that this weekend. I'm also attempting to whip up a mobile app for my husband, who has been using Google Spreadsheets for something that really only needs four buttons, a display of two numbers, and (here's the catch) persistent data. If it works, I'll [tweet about it](http://www.twitter.com/heyamberwilkie) or something.
+
+I spent a lot of time this week thinking about Craft Academy as a business and helping revamp a bit of the website copy. Marketing is (yet another) one of my passions and it's always fun and challenging to describe someone else's baby.
+
+In other news, I accidentally FTPed over my blog index and it seems irretrievably gone. Fortunately, my six years of content is still up and the links to all those pretty weddings still work. If I were trying to make money shooting weddings, I'd be having a spaz-out but I'm not, so I'm remarkably ok with all my website visitors seeing "Page Not Found". (PS: if anyone reading this is a Wordpress wiz, please drop me a line!)
+
+### Linktastic
+I've had a note in my e-notebook about "the week's best resources" for three weeks now, so I think it's about time to slap them free:  
+- [How to Learn Technical Things](http://jamison.dance/07-04-2016/how-to-learn-technical-things/)
+- [Why Can't Programmers Program](https://blog.codinghorror.com/why-cant-programmers-program/) - I saved this to send to some frustrated folks after a particularly rough couple of days at bootcamp. If learning to code is tough, that's because learning to code is tough (not because you're an idiot).
+- [Object-Oriented Programming vs. Functional Programming](http://www.codenewbie.org/blogs/object-oriented-programming-vs-functional-programming) - Yeah, what the hell, right?
+- [Star Wars or Star Trek?](http://www.wiseit.se/blogg/utvecklare-star-wars-eller-star-trek/) [In Swedish] A ridiculous poll that is 95% men but shows a strong age-division between Star Wars and Star Trek fans. (Trekkie, obviously, in this house)
+-[Awesome video of bacteria evolving](http://www.theatlantic.com/science/archive/2016/09/stunning-videos-of-evolution-in-action/499136/) - Just spent two minutes of your life watching this, it's awesome.
+- And yeah, I had a bunch more but fuck giant lists of links, amiright? I'll be back next week.
