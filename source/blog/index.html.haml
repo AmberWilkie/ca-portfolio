@@ -15,7 +15,8 @@ layout: blog_index_layout
   /
     use article.summary(250) if you have Nokogiri available to show just
     the first 250 characters
-  = Nokogiri::HTML(article.summary(500)).text
+  -# = Nokogiri::HTML(article.summary(500)).text
+  = Nokogiri::HTML(open(article.summary(500)).read, nil, 'utf-8')
   = link_to 'Read more…', article
   .orangehr.blog
 - if paginate
