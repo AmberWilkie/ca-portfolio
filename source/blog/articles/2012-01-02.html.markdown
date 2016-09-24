@@ -1,8 +1,0 @@
----
-title: Working Example?
-date: 2012-01-02T00:00:00.000Z
-tags: example
-published: false
----
-
-This is an example article. You probably want to delete it and write your own articles!

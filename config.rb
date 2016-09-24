@@ -43,7 +43,8 @@ set :markdown, smartypants: true,
                         no_intra_emphasis: true,
                         superscript: true,
                         footnotes: true,
-                        prettify: true
+                        prettify: true,
+                        strikethrough: true
       # autolink:         true,
       # fenced_code:      true,
       # generate_toc:     true,
@@ -86,13 +87,12 @@ end
 #
 # end
 activate :dotenv, env: '.env.build'
-binding.pry
 
 activate :deploy do |deploy|
   deploy.deploy_method   = :ftp
   deploy.build_before    = true
   deploy.host            = 'portfolio.amberwilkie.com'
-  deploy.path            = '/'
-  deploy.user            = 'amberwil'
+  deploy.path            = '/public_html/portfolio'
+  deploy.user            = ENV['FTP_USER']
   deploy.password        = ENV['FTP_PASS']
 end

@@ -1,10 +1,16 @@
+- name: Garden Club
+  description: A social media platform built on Rails with a bootcamp colleague. Users can share stories about their gardens.
+  github: https://github.com/AmberWilkie/garden_club
+  deployed: https://garden-club.herokuapp.com
+  craftacademy: true
+
 - name: AmberNote
   description: A simple journalling app for programmers built on Sinatra
   github: https://github.com/AmberWilkie/ambernote
   deployed: https://ambernote.herokuapp.com
 
 - name: Blackjack
-  description: Card game written in Javascript.
+  description: The classic card game, written in Javascript.
   github: https://github.com/AmberWilkie/blackjack-js
   deployed: https://amberwilkie.github.io/blackjack-js/
 
@@ -23,7 +29,7 @@
   github: https://github.com/AmberWilkie/library-challenge
   craftacademy: true
 
-- name: Checkout Challenge
-  description: Bonus challenge for the first week of bootcamp - an extremely bare-bones "store".
-  github: https://github.com/AmberWilkie/checkout-challenge
-  craftacademy: true
+# - name: Checkout Challenge
+#   description: Bonus challenge for the first week of bootcamp - an extremely bare-bones "store".
+#   github: https://github.com/AmberWilkie/checkout-challenge
+#   craftacademy: true

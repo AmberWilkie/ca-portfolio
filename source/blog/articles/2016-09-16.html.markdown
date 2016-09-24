@@ -13,14 +13,16 @@ My colleague Susanna and I worked together again and I believe we're becoming so
 ![Screenshot two from Garden Club](images/garden-app-screenshots/two.png)
 
 It's Friday afternoon and we still have the weekend to work, but here's what we've accomplished from the list of things our "coach" requested for the app:
-- ~~Build and deploy a SAAS (Software as as Service) application.~~
-- Implement user ~~authentication and~~ authorization (~~Devise~~, CanCanCan)
-- ~~Implement OAuth authentication~~
-- Implement some sort of market place functionality (services or products)
-- Make use of a payment gateway (PayPal, Klarna, Stripe)
-- Make use of the geocoding and maps (Google Maps, OpenStreet Map) for vendors or service providers.
-- Implement a rating system (for products, vendors or something else)
-- Set up a third party API integration (TraficLab, Facebook, etc)
+
+* ~~Build and deploy a SAAS (Software as as Service) application.~~  
+* Implement user ~~authentication and~~ authorization (~~Devise~~, CanCanCan)  
+* ~~Implement OAuth authentication~~  
+* Implement some sort of market place  
+ functionality (services or products)  
+* Make use of a payment gateway (PayPal, Klarna, Stripe)  
+* Make use of the geocoding and maps (Google Maps, OpenStreet Map) for vendors or service providers.  
+* Implement a rating system (for products, vendors or something else)  
+* Set up a third party API integration (TraficLab, Facebook, etc)
 
 So, yep.
 
@@ -32,4 +34,4 @@ Still, I'm proud. Our app does a thing and it looks pretty (thank you Susanna) a
 
 Craft Academy also celebrated the graduation of the seniors yesterday! It has been really nice to have a group of folks six weeks ahead of us in terms of learning, ability, and yes, stress. Next week we'll start doing the things they were on when we joined. We've watched them struggle and now we get to struggle with the same challenges.
 
-We had a party last night in honor of them and it got really crazy, as one would imagine happens when you put a bunch of folks in a room that are stressed to the max with a bunch of alcohol. We're all feeling it today, but obviously still working. It's bootcamp. No rest for the weary.
+We had a party last night in honor of them and it got really crazy, as one would imagine happens when you put a bunch of alcohol in a room with a bunch of folks that are stressed to the max. We're all feeling it today, but obviously still working. It's bootcamp. No rest for the weary.
