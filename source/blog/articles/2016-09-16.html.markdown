@@ -14,15 +14,16 @@ My colleague Susanna and I worked together again and I believe we're becoming so
 
 It's Friday afternoon and we still have the weekend to work, but here's what we've accomplished from the list of things our "coach" requested for the app:
 
-* ~~Build and deploy a SAAS (Software as as Service) application.~~  
-* Implement user ~~authentication and~~ authorization (~~Devise~~, CanCanCan)  
-* ~~Implement OAuth authentication~~  
-* Implement some sort of market place  
+<ul>
+<li> ~~Build and deploy a SAAS (Software as as Service) application.~~  
+<li> Implement user ~~authentication and~~ authorization (~~Devise~~, CanCanCan)  
+<li> ~~Implement OAuth authentication~~  
+<li> Implement some sort of market place  
  functionality (services or products)  
-* Make use of a payment gateway (PayPal, Klarna, Stripe)  
-* Make use of the geocoding and maps (Google Maps, OpenStreet Map) for vendors or service providers.  
-* Implement a rating system (for products, vendors or something else)  
-* Set up a third party API integration (TraficLab, Facebook, etc)
+<li> Make use of a payment gateway (PayPal, Klarna, Stripe)  
+<li> Make use of the geocoding and maps (Google Maps, OpenStreet Map) for vendors or service providers.  
+<li> Implement a rating system (for products, vendors or something else)  
+<li> Set up a third party API integration (TraficLab, Facebook, etc)
 
 So, yep.
 
