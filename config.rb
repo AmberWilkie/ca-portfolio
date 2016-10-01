@@ -78,6 +78,9 @@ configure :build do
   activate :relative_assets
   activate :build_cleaner
 
+## Used for parsing markdown docs in the resume.yml
+require 'maruku'
+
 end
 
 # activate :deploy do |deploy|
