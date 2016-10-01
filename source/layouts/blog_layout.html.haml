@@ -25,6 +25,7 @@
         %h2.blogheader= current_article.title
         %span.blog= current_article.date.strftime('%b %e')
         = yield
+        %hr.bloghr
       .aside
         .small-6.columns.footofawesome
           %h4.blogheader Recent Articles

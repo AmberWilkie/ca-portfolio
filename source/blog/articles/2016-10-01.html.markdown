@@ -1,0 +1,32 @@
+---
+title: Week 8 - Slow Food Online
+date: 2016-10-01 10:14 UTC
+tags: rails, bootcamp
+---
+After [last week's](2016-09-24.html) Javascript / AngularJS / Ionic project, it was lovely to get back to Ruby and Rails. As a group, we are building Slow Food Online, a marketplace for hungry folks who want to order dishes from various restaurants in their area, and have the food delivered. Not unlike the real-life Foodora!
+
+We started the week with a "design sprint", mapping out databases, sketching LoFis and filling up our to-do list (PivotalTracker) with scads of features and chores. We've discussed teamwork, pair programming and dealt with some interpersonal conflicts and challenges. You know, all the actual hard stuff. (The coding bit is the easy part.)
+
+The app is coming together. As of Friday afternoon, we have Customers, who can view Menus, which hold Dishes, and add them to their cart. Soon enough we'll have Restaurant Owners, who will be the only ones to create those Menus and Dishes. It doesn't look like too much yet but I suspect by the end of the weekend we'll have some actual functionality in place.
+
+My attention was split this week as I came on as a mini-contractor for [Craft Academy](http://www.craftacademy.se) to work on the English language section of their website. I've included some screenshots below.
+
+![front page screenshot](images/ca-website-screenshots/front-page.png)
+
+I've been pestering Thomas, the owner, to put up an English version since my first day at the bootcamp and he finally took charge on that, by hiring me to write the copy!
+
+![students screenshot](images/ca-website-screenshots/students.png)
+
+I quickly realized I wanted to change the entire site and was given the flexibility to do it. So I re-wrote all of the copy, changed sections, and removed lots of unnecessary text. (And I should certainly also note that I didn't do any of the design on this - I just tweaked what they already had and used their styles to fit what I wanted to say.) It was fun and exciting (marketing and writing are two of my other interests), but took my attentions away from coding.
+
+![employers screenshot](images/ca-website-screenshots/learn.png)
+
+On Friday afternoon when I could finally spend a good chunk of time writing code, it felt really good to get back in the groove.
+
+### Linktastic
+The best things I saw on the internet this week (plus mopping up extras from all the other weeks I kept forgetting to do this):
+<ul><li> [Code Newbie: Scrum Master](http://www.codenewbie.org/podcast/scrum-master) I've been listening to the Code Newbie podcast since I started this bootcamp and it's a *wealth* of tips, information and inspiration for new coders. Highly recommend! This episode is all about Agile and understanding the terminology, but whatever your (new) coding interest, Saron's got something for you. The newest episode about the Mother-Son team was really great for folks just starting bootcamp.
+<li> [Oh Shit, Git](http://ohshitgit.com) Tongue-in-cheek but actually helpful advice for people who fucked up something in Git but don't know how to Google for the problem.
+<li> [IndieHackers: Design Basics](https://www.indiehackers.com/forum/post/-KRVAyzvM8aqJorranfl) Super-basic design guidelines for folks who "don't do" design. Short read, invaluable.
+<li> [How to find time to be a better developer](https://medium.freecodecamp.com/finding-time-to-become-a-better-developer-eebc154881b2#.rmz6mexez)
+<li> [Javascript vs. Ruby (video)](https://www.destroyallsoftware.com/talks/wat) Funny things for very nerdy people.</ul>
