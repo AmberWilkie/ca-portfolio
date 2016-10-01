@@ -66,7 +66,6 @@ GEM
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    maruku (0.7.2)
     memoist (0.15.0)
     method_source (0.8.2)
     middleman (4.1.10)
@@ -194,7 +193,6 @@ DEPENDENCIES
   capybara-webkit
   haml
   launchy
-  maruku (~> 0.7.2)
   middleman (>= 4.0.0)
   middleman-blog
   middleman-deploy!
