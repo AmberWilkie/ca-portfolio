@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+	<title>data.resume.info.name | Web Designer, Director | <%= data.resume.info.email %></title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/stylesheets/resume.css" media="all" />
+
+</head>
+<body>
+
+<div id="doc2" class="yui-t7">
+	<div id="inner">
+
+		<div id="hd">
+			<div class="yui-gc">
+				<div class="yui-u first">
+					<h1><%= data.resume.info.name %></h1>
+					<h2><%= data.resume.info.shortdesc %></h2>
+				</div>
+
+				<div class="yui-u">
+					<div class="contact-info">
+						<!-- <h3><a id="pdf" href="#">Download PDF</a></h3> -->
+						<h3><a href="<%= data.resume.info.email %>"><%= data.resume.info.email %></a></h3>
+						<h3><%= data.resume.info.phone %></h3>
+						<h3><%= data.resume.info.address.city %>, <%= data.resume.info.address.country %>, <%= data.resume.info.address.postal_code %></h3>
+					</div><!--// .contact-info -->
+				</div>
+			</div><!--// .yui-gc -->
+		</div><!--// hd -->
+
+		<div id="bd">
+			<div id="yui-main">
+				<div class="yui-b">
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Profile</h2>
+						</div>
+						<div class="yui-u">
+							<p class="enlarge">
+								<%= data.resume.info.desc %>
+							</p>
+						</div>
+					</div><!--// .yui-gf -->
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Skills</h2>
+						</div>
+						<div class="yui-u">
+							<% data.resume.skills.each do |skill| %>
+
+								<div class="talent">
+									<h2><%= skill.name %></h2>
+									<p><%= skill.desc %></p>
+								</div>
+							<% end %>
+
+						</div>
+					</div><!--// .yui-gf -->
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Technical</h2>
+						</div>
+						<div class="yui-u">
+							<ul class="talent">
+								<% data.resume.technical1.each do |skill| %>
+									<% if data.resume.technical1.last == skill %>
+										<li class="last"><%= skill %></li>
+									<% else %>
+										<li><%= skill %></li>
+									<% end %>
+								<% end %>
+							</ul>
+
+							<ul class="talent">
+								<% data.resume.technical2.each do |skill| %>
+									<% if data.resume.technical2.last == skill %>
+										<li class="last"><%= skill %></li>
+									<% else %>
+										<li><%= skill %></li>
+									<% end %>
+								<% end %>
+							</ul>
+
+							<ul class="talent">
+								<% data.resume.technical3.each do |skill| %>
+									<% if data.resume.technical3.last == skill %>
+										<li class="last"><%= skill %></li>
+									<% else %>
+										<li><%= skill %></li>
+									<% end %>
+								<% end %>
+							</ul>
+						</div>
+					</div><!--// .yui-gf-->
+
+					<div class="yui-gf">
+
+						<div class="yui-u first">
+							<h2>Experience</h2>
+						</div><!--// .yui-u -->
+
+						<div class="yui-u">
+							<% data.resume.jobs.each do |job| %>
+
+								<% if data.resume.jobs.last == job %>
+									<div class="job last">
+								<% else %>
+									<div class="job">
+								<% end %>
+									<h2><%= job.company %></h2>
+									<h3><%= job.title %></h3>
+									<h4><i><%= job.dates.start %> &mdash; <%= job.dates.end %></i></h4>
+									<p><%= job.desc %></p>
+								</div>
+							<% end %>
+						</div><!--// .yui-u -->
+					</div><!--// .yui-gf -->
+					<div class="yui-gf last">
+						<div class="yui-u first">
+							<h2>Education</h2>
+						</div>
+						<div class="yui-u">
+							<% data.resume.education.each do |school| %>
+								<h2><%= school.name %></h2>
+								<h3><%= school.title %></h3>
+								<h3><i><%= school.dates.start %> &mdash; <%= school.dates.end %></i></h3><br />
+							<% end %>
+						</div>
+					</div><!--// .yui-gf -->
+
+
+				</div><!--// .yui-b -->
+			</div><!--// yui-main -->
+		</div><!--// bd -->
+
+		<div id="ft">
+			<p><%= data.resume.info.name %> &mdash; <a href="<%= data.resume.info.email %>"><%= data.resume.info.email %></a> &mdash; <%= data.resume.info.phone %></p>
+		</div><!--// footer -->
+
+	</div><!-- // inner -->
+
+
+</div><!--// doc -->
+
+
+</body>
+</html>

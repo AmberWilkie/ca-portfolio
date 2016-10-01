@@ -13,92 +13,116 @@ headers:
 info:
     name: Amber Wilkie
     # dob: 1980-01-01 # not mandatory
-    shortdesc: Job Title
+    shortdesc: Web Developer
     email: amber@amberwilkie.com
     phone: 0720 08 27 07 # not mandatory
     homepage: http://portfolio.amberwilkie.com/ # not mandatory
     address:
-        street: 123 Fake Street
-        city: City
-        region: Region # not mandatory
-        postal_code: 12345 # not mandatory
-        country: Country # not mandatory
+        city: Göteborg
+        postal_code: 414 62 # not mandatory
+        country: Sverige # not mandatory
     desc: |
-        Progressively evolve cross-platform ideas before impactful infomediaries. Energistically visualize tactical initiatives before cross-media catalysts for change.
+        Former entrepreneur, web developer in Rails, AngularJS / Ionic. American with strong Swedish skills. Proficient photographer, marketer and copywriter.
 skills:
-    - name: Web design
-      desc: Assertively exploit wireless initiatives rather than synergistic core competencies.
-    - name: Interface Design
-      desc: Credibly streamline mission-critical value with multifunctional functionalities.
-    - name: Project Direction
-      desc: Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.
+    - name: Web development
+      desc: Diverse portfolio of Rails projects. Experience with AngularJS / Ionic.
+    - name: Entrepreneurship
+      desc: Six years' experience running a successful business in Washington, DC.
+    - name: Marketing and Copywriting
+      desc: Proven record of marketing and writing for businesses.
 
 languages:
-    - name: Gibberish
+    - name: English
       level: Native language
-    - name: Manager Speak
-      level: Fluent
+    - name: Swedish
+      level: Near fluency
+    - name: Spanish
+      level: Working knowledge
 
-alphabetsoup:
-    - XHTML
-    - CSS
+technical1:
+    - Ruby
+    - Rails
+    - HTML / CSS
+technical2:
     - Javascript
+    - Ionic
+    - AngularJS
+technical3:
+    - Java / Android
+    - Middleman
+    - Git & GitHub
 
-    - Jquery
-    - PHP
-    - CVS / Subversion
-
-    - OS X
-    - Windows XP/Vista
-    - Linux
 
 links:
-    - name: Link1
-      url: http://example.com/
-    - name: Another link
-      url: https://example.com/
+    - name: Portfolio
+      url: http://portfolio.amberwilkie.com
+    - name: GitHub
+      url: http://www.github.com/amberwilkie
 
 jobs:
-    - title: Senior Interface Designer
-      company: Famous Company
-      url: http://example.com/
+    - title: Entrepreneur / Owner
+      company: Amber Wilkie Photography
+      url: http://amberwilkie.com/
       dates:
-          start: 2007-01-02
-          end: Present
+          start: 2009
+          end: 2015
       desc: |
-          Intrinsicly enable optimal core competencies through corporate relationships.
-          Phosfluorescently implement worldwide vortals and client-focused imperatives.
-          Conveniently initiate virtual paradigms and top-line convergence.
-    - title: Junior Interface Designer
-      company: Technocorp
+          Wedding and portrait photographer. Responsible for every aspect of the business: marketing, writing/blogging, accounting, contracts, customer service, editing and printing services, graphic design, website management and design. More than 200 total clients.
+    - title: Assistant Editor
+      company: American Maritime Officers
       dates:
-          start: 2005-01-01
-          end: 2007-01-01
+          start: 2008
+          end: 2012
       desc: |
-          Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment.
-          Compellingly morph extensive niche markets with mission-critical ideas.
-          Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits.
-education: # this section is not mandatory
-    - name: Indiana University
-      url: http://indiana.edu # not mandatory
-      city: Bloomington
-      region: Indiana
-      country: USA # not mandatory
+          Wrote news stories and opinion pieces for monthly industry newspaper. Managed photo library. Assisted with layout, calendar and marketing materials design, website design. Photographed members and union events. Worked remotely and independently most often. Frequent travel.
+    - title: Communications Assistant
+      company: Pan American Development Foundation
       dates:
-        start: 2001-01-01
-        end: 2010-01-01 # not mandatory
-      title: Dual Major, Economics and English
-      grade: 4.0 GPA # not mandatory
+          start: 2007
+          end: 2008
+      desc: |
+          Served as Webmaster. Produced and managed various publications, including monthly newsletters. Edited reports, photographs, publications, and other documents. Drafted press releases, talking points, daily news feed for staff. Designed and managed databases. Assisted communications and corporate relations departments; prepared reports, presentations, and visual materials. Performed research; managed media libraries; translated a variety of materials.
+
+education:
+    - name: Craft Academy
+      url:
+      city: Göteborg
+      region:
+      country: Sverige
+      dates:
+        start: August, 2016
+        end: October, 2016
+      title: Programming bootcamp
+    - name: Tulane University
+      url: http://www.tulane.edu
+      city: New Orleans
+      region: Louisiana
+      country: USA
+      dates:
+        start: August, 2002
+        end: December, 2006
+      title: Dual Major, Latin American Studies and Spanish. Minor, Biology
+    - name: Folkuniversitet
+      url:
+      city: Göteborg
+      region:
+      country: Sverige
+      dates:
+        start: February, 2016
+        end: August, 2016
+      title: Intensive Swedish lessons
 
 projects: # this section is not mandatory
     - name: ResumeMan
       desc: |
           Resume Man is an HTML and PDF resume builder made in Ruby with Middleman.
-      url: https://github.com/reefab/ResumeMan # not mandatory
-      dates: # not mandatory
-        start: 2013-02-18
-        end: 2014-04-05 # not mandatory
-      location: # not mandatory
-        city: Florence
-        region: Tuscany
-        country: Italy # not mandatory
+      github: https://github.com/reefab/ResumeMan
+      deployed: http://gardenclub.herokuapp.com
+    - name: ResumeMan
+      desc: |
+          Resume Man is an HTML and PDF resume builder made in Ruby with Middleman.
+      url: https://github.com/reefab/ResumeMan
+    - name: ResumeMan
+      desc: |
+          Resume Man is an HTML and PDF resume builder made in Ruby with Middleman.
+      url: https://github.com/reefab/ResumeMan

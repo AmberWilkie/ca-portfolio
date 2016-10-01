@@ -4,6 +4,7 @@ require 'pry'
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '/resume/*', layout: false
 activate :blog do |blog|
   blog.permalink = "articles/{year}-{month}-{day}.html"
   # Matcher for blog source files
@@ -77,9 +78,6 @@ configure :build do
   set :relative_links, true
   activate :relative_assets
   activate :build_cleaner
-
-## Used for parsing markdown docs in the resume.yml
-require 'maruku'
 
 end
 

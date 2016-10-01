@@ -17,8 +17,6 @@ gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'm
 gem "middleman-blog"
 gem 'nokogiri'
 gem 'middleman-syntax'
-gem 'maruku', '~> 0.7.2'
-# gem 'pygments.rb', '~> 0.6.3'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 # gem 'kramdown'
