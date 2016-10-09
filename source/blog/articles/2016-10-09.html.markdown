@@ -1,0 +1,24 @@
+---
+title: Bootcamp Week Nine - Slow Food Online, continued
+date: 2016-10-09 16:37 UTC
+tags: rails, bootcamp
+---
+This week we continued work on the Slow Food challenge - by far the biggest, most ambitious project we've undertaken as a group. It's Sunday evening and we're wrapping up work on this phase of the project. We've got restaurant Owners, who can create their Restaurant, and add to it Menus and Dishes. Customers can add dishes to their Shopping Cart, check out and actually pay with [Stripe](https://stripe.com). You can see the app in action here: [Slow Food August](https://slow-food-august.herokuapp.com/).
+
+![slow food screenshot one](images/slow-food-screenshots/slowfoodone.png)
+
+We started to see the real value in quality planning and documentation. A number of times we had to stop work and discuss what our app was really supposed to be doing, where the greatest value lay, and how best to achieve our goals. What seems very clear in a quick discussion can instantly blur when you sit down to type up an acceptance test.
+
+![slow food screenshot two](images/slow-food-screenshots/slowfoodtwo.png)
+
+As we practiced using Rails, we began to feel comfortable with the data structures and "magic" of the framework. It just takes a simple `belongs_to :user` in the `Restaurant` model to allow `user.restaurant` to return the user's associated restaurant. No complicated queries or hand-written database calls - just an incredibly simple line of code that does it all for you. When I started this course, I had no idea what Ruby even was. Now I'm fully in love.
+
+![slow food screenshot three](images/slow-food-screenshots/slowfoodthree.png)
+
+As opposed to the previous six weeks, these two have felt more relaxed, but also more bureaucratic, office-like. It felt a bit like what it might actually feel like to work for a company building a marketplace. It's part of the bootcamp experience and obviously is important to understand, but was also a bit on the slow side. It didn't feel like as much of a challenge. On the other hand, our app is pretty nifty and does some neat things.
+
+<img style="float: right;" src="images/slow-food-screenshots/slowfoodfour.png"> For instance, I worked with Thomas this week to [implement Stripe functionality for the app](https://medium.com/craft-academy/keeping-it-simple-3e7d9b186015#.ex9b3vuoq). It's a complicated thing and something neither of us had done before. I mostly just watched him code but he was patient enough to explain everything as he went. We had to fight through some logic problems but in the end we got the thing working, he got it tested properly, and our app now takes (fake) payments. (It could take real payments but who wants to buy imaginary food?)
+
+In all, it was a good week. Most of us kept up a pretty decent pace and were dedicated to building this thing. We had less friction as a group and even went out for drinks on Wednesday. (And as a side note, be prepared for heavy drinking during bootcamp... I always say I'm going to take it easy next time and next time go hard, again).
+
+Starting tomorrow we'll be building an API for our app and implementing a mobile interface! I'm very excited to beef up my Javascript skills and take another stab at Ionic.
