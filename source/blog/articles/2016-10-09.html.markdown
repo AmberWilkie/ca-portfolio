@@ -1,5 +1,5 @@
 ---
-title: Bootcamp Week Nine - Slow Food Online, continued
+title: Week 9 - Slow Food Online, continued
 date: 2016-10-09 16:37 UTC
 tags: rails, bootcamp
 ---
