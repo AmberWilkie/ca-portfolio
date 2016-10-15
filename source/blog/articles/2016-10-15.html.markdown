@@ -1,0 +1,53 @@
+---
+title: Angular's "Put" and the deceptive beauty of frameworks
+date: 2016-10-15 07:05 UTC
+tags: ruby, angularjs
+---
+First, an anecdote. I'll keep it light. The internet works, for the most part, on a handful of HTTP Actions: GET, POST, PUT, DELETE, etc. Most everyone has agreed what all of these things will do: GET will gather information, POST creates things, PUT updates things, DELETE you can figure out on your own.
+
+Yesterday I was working in AngularJS on a mobile application to consume the APIs we have/are generating from the [Slow Food](2016-10-09.html.markdown) project. The GET method worked great. Here it is:
+```
+return $resource(API_URL + '/restaurants/:id', {},
+    {
+        'query': {
+            method: 'GET',
+            isArray: false
+        }
+    })
+```
+The `API_URL` is defined elsewhere in the app as a constant. Here's how you use this method:
+```
+restaurantsFactory.query({id: rest_id}, function (response) {
+      $scope.restaurant = response;
+      (...)
+```
+Even if you've never seen Angular or even Javascript, you can tell what is happening here. When you try to use this method, you pass in a `rest_id` (where rest is short for restaurants) and then the method will go 'GET' information about that particular restaurant. If no restaurant is passed in, it returns information from `/restaurants` which, as we planned, has information about *all* the restaurants. Handy!
+
+But then, my friends, we tried to use the other HTTP methods. POST went great - we adjusted a similar function using the `method` you see above to include `'POST'` in our new service, and we created the object we were hoping to create. `PUT` was another story.
+
+Here's the code we were finally able to construct, with basically all credit to [this tutorial](https://www.sitepoint.com/creating-crud-app-minutes-angulars-resource/) (and my coach Raoul). You use it in almost the exact same way as the `GET` method above:
+```
+return $resource(API_URL + '/carts/:id', {id: '@id'}, {
+            'put': {
+                method: 'PUT'
+            }
+        });
+```
+See that `{id: '@id'}`? Seriously, what the hell is that? The `GET` method didn't need that. And I haven't been working with Angular long, but I have yet to see an `@` elsewhere. As someone learning the framework, it feels arbitrary and, frankly, stupid. And there our anecdote is done and leads me to the
+
+### Aforementioned Deceptive Beauty of Frameworks
+
+My anecdote shows that the people who built these methods obviously didn't build them for me. I never would have thought to throw that `@` in there (without lots of research), but it's quite beside my new point. Someone made this function so that I wouldn't have to write my own network calls. And consider this:
+```
+cartsFactory.post({dish_id: dish_id}).$promise
+    .then( function (response) {
+  (...)
+```
+See that `then`? That's an async (asynchronous) call. This function just sits around waiting until it receives a `response`. I remember async calls from when I tried to learn Java - they require seemingly endless lines of code, different "threads" and a considerable level of sophistication. Not here. Here, we just throw a `.then` on the mix and our function waits. Frameworks.
+
+It's easy to get mad that someone thought there should be an `@` where you don't expect it. Hell, I get upset about Ruby thinking `elsif` is a better way to say `elseif` (seriously, wtf?). But these complex frameworks were built by humans to make our jobs easier. Sometimes that's a super-great thing. I'm glad I don't have to worry about threading in Angular. But it's also a bad thing, because if you're starting out, you have no idea what's going on under the hood.
+
+I'm two weeks from graduating this bootcamp, so I wouldn't expect myself to understand all the things we're doing in Angular (or Rails or anything, really) but when I'm out in the world, it's important to me to have at least a shallow knowledge of what's going on behind the scenes. Frameworks are mostly beautiful, but they are a layer between us and the code (one of the many, many layers we have built into programming). When they make sense to us, we love them. And when they don't make sense to us, hopefully we dig a bit to find out what they were thinking - they, the folks who built these things so we don't have to.
+
+And finally, because apparently I haven't been including enough photos in my blog posts, here's some cats dressed as old-timey gardeners:
+![gardener cats](http://www.publicdomainpictures.net/pictures/80000/nahled/cat-dressed-vintage-photo.jpg)
