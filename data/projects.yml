@@ -1,3 +1,10 @@
+- name: Slow Food Online
+  description: Bootcamp group project - a web and mobile marketplace for users to purchase dishes for home delivery.
+  github: https://github.com/AmberWilkie/slow-food
+  deployed: https://slow-food-august.herokuapp.com
+  mobile: Ionic View number
+  craftacademy: true
+
 - name: Garden Club
   description: A social media platform built on Rails with a bootcamp colleague. Users can share stories about their gardens.
   github: https://github.com/AmberWilkie/garden_club
@@ -22,11 +29,6 @@
   description: An introductory Javascript project for calculating BMI with metric or imperial data.
   github: https://github.com/AmberWilkie/ca-bmi-challenge
   deployed: https://amberwilkie.github.io/ca-bmi-challenge/
-  craftacademy: true
-
-- name: The Library
-  description: An introductory Ruby project where "users" can borrow library books from a YAML file.
-  github: https://github.com/AmberWilkie/library-challenge
   craftacademy: true
 
 # - name: Checkout Challenge
