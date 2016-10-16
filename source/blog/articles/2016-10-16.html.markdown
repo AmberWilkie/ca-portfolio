@@ -1,0 +1,22 @@
+---
+title: Week 10 - Slow Food goes mobile!
+date: 2016-10-16 10:16 UTC
+tags: bootcamp, ionic, API
+---
+After a furious rush of submitted pull requests on Sunday night, we "wrapped up" the web version of [Slow Food](https://slow-food-august.herokuapp.com) and got to work on an API back end and a mobile app to consume it. We completed most of the tasks we set up for ourselves (minus checkout with Stripe because: hard). It even looks ok.
+
+![slow food mobile](images/slow-food-mobile-screenshots/mobile.png)
+
+After the whirlwind week with Angular and Ionic [last time](2016-09-24.html.markdown), this week felt pretty smooth. I think we all feel much more comfortable building APIs and consuming them, and working with the Ionic framework.
+
+One great thing about [Ionic](http://www.ionicframework.com) is that it is very beautiful out of the box, with lots of built-in styling. So if, like me, you would rather build a bunch of fun logic than fiddle with padding, you can get right to it. That pretty list up there with map icons - takes almost no effort to use. Awesome!
+
+Starting tomorrow, we'll be done with Slow Food and working on our final project. It looks like we'll be building a quiz app for pubquiz or just palling around with your buds. We're hoping to debut it at our graduation / Halloween party at Stena Center. If you're in Gothenburg, you should come by!
+
+### Linktastic
+<ul>
+<li>[10 Things Your Resume Needs When Applying at Startups](https://skillcrush.com/2016/10/03/startup-resume/) I've been keeping an eye out this entire bootcamp for tips and tricks to end up at the right place for me. Now that we're graduating soon, I'm kicking it into higher gear. (PS: I'm awesome, you should hire me)</li>
+<li>[The State of Javascript](http://stateofjs.com/2016/introduction/) Huge survey of JS programmers - what's hot, what's not. What makes them happy. (Hint: it's not Angular)</li>
+<li>[So You Want to Be a Functional Programmer](https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-1-1f15e387e536#.pp6ds8lzd) Functional programming, introduction.</li>
+<li>[The right and wrong way to microwave food](http://www.thekitchn.com/the-wrong-way-and-the-right-way-to-microwave-leftovers-223098)</li>
+<li>And because every time someone finds out I'm American, I have to talk about him: [The Psychology Behind Donald Trump's Unwavering Support](https://www.psychologytoday.com/blog/mind-in-the-machine/201609/the-psychology-behind-donald-trumps-unwavering-support)
