@@ -5,6 +5,7 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 page '/resume/*', layout: false
+page '/cv/*', layout: false
 activate :blog do |blog|
   blog.permalink = "articles/{year}-{month}-{day}.html"
   # Matcher for blog source files

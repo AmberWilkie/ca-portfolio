@@ -1,5 +1,5 @@
 headers:
-    profile: Profile
+    profile: Summary
     skills: Skills
     languages: Languages
     techs: Technical
@@ -9,6 +9,7 @@ headers:
     download: Download PDF
     age: y/o
     projects: Projects
+    additional: Additional
 
 info:
     name: Amber Wilkie
@@ -22,12 +23,14 @@ info:
         postal_code: 414 62 # not mandatory
         country: Sverige # not mandatory
     desc: |
-        Former entrepreneur, web developer in Rails, AngularJS / Ionic. American with strong Swedish skills. Proficient photographer, marketer and copywriter.
+        Web developer in Rails, AngularJS / Ionic. Former entrepreneur. American with strong Swedish skills. Proficient marketer, copywriter, photographer.
+    addl: |
+        Avid reader. Big-time traveler (next up: South-East Asia). Blogger. Yogi. Deeply interested in learning, challenges. Always trying to level up.
 skills:
     - name: Web development
-      desc: Diverse portfolio of Rails projects. Experience with AngularJS / Ionic.
+      desc: Diverse portfolio of Ruby on Rails and AngularJS / Ionic. Test-Driven Development approach.
     - name: Entrepreneurship
-      desc: Six years' experience running a successful business in Washington, DC.
+      desc: Six years' experience running a successful solo business in Washington, DC.
     - name: Marketing and Copywriting
       desc: Proven record of marketing and writing for businesses.
 
@@ -41,15 +44,15 @@ languages:
 
 technical1:
     - Ruby
-    - Rails
-    - HTML / CSS
-technical2:
     - Javascript
-    - Ionic
-    - AngularJS
-technical3:
     - Java / Android
-    - Middleman
+technical2:
+    - Rails
+    - AngularJS
+    - Ionic
+technical3:
+    - HTML / CSS
+    - TDD, CI and continous deployment
     - Git & GitHub
 
 
