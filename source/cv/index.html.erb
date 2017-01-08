@@ -53,7 +53,7 @@
 					</div><!--// .yui-gf -->
 
 					<!-- Technical -->
-					<!-- <div class="yui-gf">
+					 <div class="yui-gf">
 						<div class="yui-u first">
 							<h2>Technical</h2>
 						</div>
@@ -150,8 +150,13 @@
 							<h2><%= data.resume.headers.additional %></h2>
 						</div>
 						<div class="yui-u">
+							<h3 class="emphasis">Public Speaking</h3>
 							<p class="medium">
-								<%= data.resume.info.addl %>
+								<%= data.resume.addl.speaking %>
+							</p>
+							<div class="yui-gf"></div>
+							<p class="medium">
+								<%= data.resume.addl.paragraph %>
 							</p>
 						</div>
 					</div><!--// .yui-gf -->
@@ -170,6 +175,6 @@
 
 </div><!--// doc -->
 
-
+</div>
 </body>
 </html>

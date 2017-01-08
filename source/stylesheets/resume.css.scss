@@ -19,6 +19,16 @@ CUSTOM
   text-transform: small-caps;
 }
 
+.emphasis {
+  font-weight: bold;
+  padding-bottom: .5em;
+}
+
+.space {
+  padding-top: .2em;
+  padding-bottom: .2em;
+}
+
 
 .msg { padding: 10px; background: #222; position: relative; }
 .msg h1 { color: #fff;  }

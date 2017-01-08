@@ -24,8 +24,12 @@ info:
         country: Sverige # not mandatory
     desc: |
         Web developer in Rails, AngularJS / Ionic. Former entrepreneur. American with strong Swedish skills. Proficient marketer, copywriter, photographer.
-    addl: |
-        Avid reader. Big-time traveler (next up: South-East Asia). Blogger. Yogi. Ceramicist. Deeply interested in learning, challenges. Always trying to level up.
+
+addl:
+    speaking: |
+      "Rails is Awesome", Sigma Smart Women Society, Dec. 2016
+    paragraph: |
+      Avid reader. Big-time traveler (next up: South-East Asia). Blogger. Yogi. Ceramicist. Deeply interested in learning, challenges. Always trying to level up.
 skills:
     - name: Web development
       desc: Diverse portfolio of Ruby on Rails and AngularJS / Ionic. Test-Driven Development approach.
@@ -45,14 +49,13 @@ languages:
 technical1:
     - Ruby
     - Javascript
-    - Java / Android
+    - HTML / CSS
 technical2:
     - Rails
-    - AngularJS
+    - Angular JS
     - Ionic
 technical3:
-    - HTML / CSS
-    - TDD, CI and continous deployment
+    - TDD, continous integration & deployment
     - Git & GitHub
 
 
@@ -63,6 +66,14 @@ links:
       url: http://www.github.com/amberwilkie
 
 jobs:
+    - title: Junior Coach and Developer
+      company: Craft Academy
+      url: http://craftacademy.se
+      dates:
+          start: 2016
+          end: present
+      desc: |
+          Head coach for prepatory course and first four weeks of coding bootcamp in Ruby, Javascript, Rails and Angular JS. Developed web and mobile applications for Craft Academy Labs. Responsible for English-language inquiries to bootcamp, marketing materials and active role in maintaining CA brand.
     - title: Entrepreneur / Owner
       company: Amber Wilkie Photography
       url: http://amberwilkie.com/
