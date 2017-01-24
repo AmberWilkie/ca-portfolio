@@ -21,3 +21,5 @@
 .env.build
 
 .idea/
+
+npm-debug.log
