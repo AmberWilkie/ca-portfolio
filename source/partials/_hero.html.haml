@@ -3,4 +3,28 @@
     .large-12.columns-centered
       %h1 Hi, I'm Amber.
       %p.hero Badassery. Insane competence. Magic.
-      %a.button.hero{:href => "#contact"} Say hey!
+      %a.button.hero{:href => "mailto:amber@amberwilkie.com"} Say hey!
+
+:javascript
+  const hero = document.querySelector('.hero');
+  const heyButton = hero.querySelector('.button');
+  const walk = 15;
+
+  function moveShadow(e) {
+    const width = hero.offsetWidth;
+    const height = hero.offsetHeight;
+    let x = e.offsetX;
+    let y = e.offsetY;
+
+    if(this !== e.target) {
+      x = x + e.target.offsetLeft;
+      y = y + e.target.offsetTop;
+    }
+
+    const xWalk = Math.round((x / width * walk) - (walk / 2));
+    const yWalk = Math.round((y / height * walk) - (walk / 2));
+
+    heyButton.style.boxShadow = `${xWalk}px ${yWalk}px 0 rgba(225,225,225,225)`
+  }
+
+  hero.addEventListener('mousemove', moveShadow)
