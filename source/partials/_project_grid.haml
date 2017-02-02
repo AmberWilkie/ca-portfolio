@@ -18,6 +18,10 @@
             - if project[:mobile] != nil
               |
               %a{:href => "#{project[:mobile]}", :target => "_new"} Mobile
+            - if project[:tech]
+              %div{class:'tech'}
+                Tech:
+                = project[:tech]
             - if project[:craftacademy]
               .craftdiv
                 %a{:href => "http://www.craftacademy.se", :target => "_new"}Craft Academy

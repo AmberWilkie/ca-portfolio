@@ -1,9 +1,17 @@
+- name: Götavents
+  description: An event aggregator. Visitors can find current events from Meetup, Facebook and the City of Gothenburg.
+  github: https://github.com/amberwilkie/govents
+  deployed: http://apimachine.herokuapp.com/
+  craftacademy: false
+  tech: Rails, APIs, Foundation
+
 - name: Quizmaster
-  description: An online platform for creating and hosting pub quizzes. Users send quiz questions in real time with Action Cable.
+  description: An online platform for creating and hosting pub quizzes. Users send quiz questions and answers in real time.
   github: https://github.com/AmberWilkie/quizmaster
   deployed: https://equizmaster.com
   mobile: https://github.com/AmberWilkie/quizmaster-client
   craftacademy: true
+  tech: Rails, ActionCable, AngularJS/Ionic, APIs
 
 - name: Slow Food Online
   description: Bootcamp group project - a web and mobile marketplace for users to purchase dishes for home delivery.
@@ -11,17 +19,20 @@
   deployed: https://slow-food-august.herokuapp.com
   mobile: https://github.com/AmberWilkie/bsf_mobile
   craftacademy: true
+  tech: Rails, AngularJS/Ionic, GMaps, Haml
 
 - name: Garden Club
   description: A social media platform built on Rails with a bootcamp colleague. Users can share stories about their gardens.
   github: https://github.com/AmberWilkie/garden_club
   deployed: https://garden-club.herokuapp.com
   craftacademy: true
+  tech: Rails, RateyRate, OAuth (Facebook)
 
 - name: AmberNote
   description: A simple journalling app for programmers built on Sinatra
   github: https://github.com/AmberWilkie/ambernote
   deployed: https://ambernote.herokuapp.com
+  tech: Sinatra
 
 - name: Blackjack
   description: The classic card game, written in Javascript.
@@ -32,11 +43,11 @@
 #  description: Brief introduction to programming fundamentals, prepared for Craft Academy.
 #  github: https://github.com/AmberWilkie/fundamentals-workshop
 
-- name: BMI Calculator
-  description: An introductory Javascript project for calculating BMI with metric or imperial data.
-  github: https://github.com/AmberWilkie/ca-bmi-challenge
-  deployed: https://amberwilkie.github.io/ca-bmi-challenge/
-  craftacademy: true
+# - name: BMI Calculator
+#   description: An introductory Javascript project for calculating BMI with metric or imperial data.
+#   github: https://github.com/AmberWilkie/ca-bmi-challenge
+#   deployed: https://amberwilkie.github.io/ca-bmi-challenge/
+#   craftacademy: true
 
 # - name: Checkout Challenge
 #   description: Bonus challenge for the first week of bootcamp - an extremely bare-bones "store".
