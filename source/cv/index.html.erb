@@ -92,7 +92,7 @@
 
 					<!-- Skills -->
 
-					<div class="yui-gf">
+					<!-- <div class="yui-gf">
 						<div class="yui-u first">
 							<h2>Skills</h2>
 						</div>
@@ -106,7 +106,7 @@
 							<% end %>
 
 						</div>
-					</div><!--// .yui-gf -->
+					</div> -->
 
 
 
@@ -125,8 +125,10 @@
 									<div class="job">
 								<% end %>
 									<h2><%= job.company %></h2>
-									<h3><%= job.title %></h3>
-									<h4><i><%= job.dates.start %> &mdash; <%= job.dates.end %></i></h4>
+									<h3><%= job.title if job.title? %></h3>
+									<% if job.dates.start? %>
+										<h4><i><%= job.dates.start %> &mdash; <%= job.dates.end if job.dates.end? %></i></h4>
+									<% end %>
 									<p><%= job.desc %></p>
 								</div>
 							<% end %>
@@ -150,7 +152,7 @@
 							<h2><%= data.resume.headers.additional %></h2>
 						</div>
 						<div class="yui-u">
-							<h3 class="emphasis">Public Speaking</h3>
+							<h3 class="emphasis"><strong>Public Speaking</strong></h3>
 							<p class="medium">
 								<%= data.resume.addl.speaking %>
 							</p>

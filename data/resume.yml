@@ -73,7 +73,7 @@ jobs:
           start: 2016
           end: present
       desc: |
-          Head coach for preparatory course and first four weeks of coding bootcamp in Ruby, Javascript, Rails and Angular JS. Developed web and mobile applications for Craft Academy Labs. Responsible for English-language inquiries to bootcamp, marketing materials and active role in maintaining CA brand.
+          Head coach for preparatory course and first four weeks of coding bootcamp in Ruby, Javascript, Rails and Angular JS. Develop web and mobile applications for Craft Academy Labs. Current projects include a social media platform based on Ionic with a Rails back-end. Responsible for English-language inquiries to bootcamp, marketing materials and active role in maintaining CA brand.
     - title: Entrepreneur / Owner
       company: Amber Wilkie Photography
       url: http://amberwilkie.com/
@@ -89,13 +89,20 @@ jobs:
           end: 2012
       desc: |
           Wrote news stories and opinion pieces for monthly industry newspaper. Managed photo library. Assisted with layout, calendar and marketing materials design, website design. Photographed members and union events. Worked remotely and independently most often. Frequent travel.
-    - title: Communications Assistant
-      company: Pan American Development Foundation
+    - title:
+      company: Additional Experience
       dates:
-          start: 2007
-          end: 2008
+          start:
+          end:
       desc: |
-          Served as Webmaster. Produced and managed various publications, including monthly newsletters. Edited reports, photographs, publications, and other documents. Drafted press releases, talking points, daily news feed for staff. Designed and managed databases. Assisted communications and corporate relations departments; prepared reports, presentations, and visual materials. Performed research; managed media libraries; translated a variety of materials.
+        Additional experiences include serving as webmaster and communications assistant for a non-profit organization and other administrative roles.
+    # - title: Communications Assistant
+    #   company: Pan American Development Foundation
+    #   dates:
+    #       start: 2007
+    #       end: 2008
+    #   desc: |
+    #       Served as Webmaster. Produced and managed various publications, including monthly newsletters. Edited reports, photographs, publications, and other documents. Drafted press releases, talking points, daily news feed for staff. Designed and managed databases. Assisted communications and corporate relations departments; prepared reports, presentations, and visual materials. Performed research; managed media libraries; translated a variety of materials.
 
 education:
     - name: Craft Academy
