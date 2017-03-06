@@ -1,5 +1,13 @@
+- name: Snack
+  description: A social platform for connecting with other language learners. Users can message each other, post in forums, find matches for their language skills and discover language-learning events near them.
+  github: https://github.com/amberwilkie/snack-app
+  deployed: https://snackar.herokuapp.com/
+  craftacademy: false
+  tech: Rails, Thredded (forums), Devise, Cucumber / Rspec / TDD
+  development: true
+
 - name: Götavents
-  description: An event aggregator. Visitors can find current events from Meetup, Facebook and the City of Gothenburg.
+  description: An event aggregator that pulls together current events from Meetup, Facebook and the City of Gothenburg APIs.
   github: https://github.com/amberwilkie/govents
   deployed: http://apimachine.herokuapp.com/
   craftacademy: false
@@ -21,23 +29,23 @@
   craftacademy: true
   tech: Rails, AngularJS/Ionic, GMaps, Haml
 
-- name: Garden Club
-  description: A social media platform built on Rails with a bootcamp colleague. Users can share stories about their gardens.
-  github: https://github.com/AmberWilkie/garden_club
-  deployed: https://garden-club.herokuapp.com
-  craftacademy: true
-  tech: Rails, RateyRate, OAuth (Facebook)
+#- name: Garden Club
+#  description: A social media platform built on Rails with a bootcamp colleague. Users can share stories about their gardens.
+#  github: https://github.com/AmberWilkie/garden_club
+#  deployed: https://garden-club.herokuapp.com
+#  craftacademy: true
+#  tech: Rails, RateyRate, OAuth (Facebook)
+#
+#- name: AmberNote
+#  description: A simple journalling app for programmers built on Sinatra
+#  github: https://github.com/AmberWilkie/ambernote
+#  deployed: https://ambernote.herokuapp.com
+#  tech: Sinatra
 
-- name: AmberNote
-  description: A simple journalling app for programmers built on Sinatra
-  github: https://github.com/AmberWilkie/ambernote
-  deployed: https://ambernote.herokuapp.com
-  tech: Sinatra
-
-- name: Blackjack
-  description: The classic card game, written in Javascript.
-  github: https://github.com/AmberWilkie/blackjack-js
-  deployed: https://amberwilkie.github.io/blackjack-js/
+#- name: Blackjack
+#  description: The classic card game, written in Javascript.
+#  github: https://github.com/AmberWilkie/blackjack-js
+#  deployed: https://amberwilkie.github.io/blackjack-js/
 #
 #- name: Fundamentals Workshop
 #  description: Brief introduction to programming fundamentals, prepared for Craft Academy.

@@ -5,8 +5,11 @@
     .large-12.medium-12.columns{"data-equalize-by-row" => "true", "data-equalizer" => ""}
       .row
       - data.projects.each do |project|
-        .large-4.columns
+        .large-6.columns
           .callout.column{"data-equalizer-watch" => ""}
+            - if project[:development]
+              .development
+                %h5.subheader Current Project
             %h5.subheader= project[:name]
             %p= project[:description]
             - if project[:github] != nil
@@ -26,7 +29,6 @@
               .craftdiv
                 %a{:href => "http://www.craftacademy.se", :target => "_new"}Craft Academy
                 bootcamp project
-
 
 
       -#   .large-4.medium-4.columns

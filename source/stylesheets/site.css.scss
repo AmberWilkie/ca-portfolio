@@ -330,6 +330,17 @@ hr {
     font-weight: bold;
     font-size: 90%;
   }
+  .development {
+    transform: rotate(-20deg) translateX(-30px) translateY(-30px);
+    background-color: rgba(255, 144, 18, 0.5);
+    position: absolute;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  .development h5.subheader {
+    color: white;
+    font-size: 90%;
+  }
   /**************************************
   FOOTER
   **************************************/
